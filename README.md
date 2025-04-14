@@ -1,3 +1,6 @@
+![grafik](https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b)
+
+
 # 🧱 ArchLinux Hyprland Groundzero
 
 Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux.  
