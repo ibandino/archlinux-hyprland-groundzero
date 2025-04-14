@@ -15,8 +15,4 @@ wget -O "$ZIP" "$URL"
 unzip -o "$ZIP" -d "$DEST"
 rm -f "$ZIP"
 
-# 2. Hauptinstall-Script nochmal triggern
-echo -e "\e[1;32m[+] Führe install.sh erneut aus (Update aller Komponenten)...\e[0m"
-bash "$(dirname "$0")/../install.sh"
-
 echo -e "\e[1;32m✅ Groundzero-Update abgeschlossen\e[0m"
