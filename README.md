@@ -1,5 +1,3 @@
----
-
 ```md
 # 🧱 ArchLinux Hyprland Groundzero
 
@@ -130,5 +128,3 @@ Fragen, Bugs oder Erweiterungsideen?
 
 > 🫡 Willkommen in der Groundzero-Zone.
 ```
-
----
