@@ -1,14 +1,13 @@
 #!/bin/bash
-
-# GUID-DIASHOW START (nacheinander anzeigen mit 8 Sek Pause)
+# GUID-DIASHOW: ASCII-Intro
+echo -e "\n🎬 Starte GUID-Diashow...\n"
 for i in {1..5}; do
-    if [[ -f "./guiddiashow/guid$i" ]]; then
-        clear
-        chmod +x "./guiddiashow/guid$i"
-        bash "./guiddiashow/guid$i"
-        sleep 8
-    fi
+    bash guiddiashow/guid${i}.sh
 done
+
+echo -e "\n✅ GUID-Diashow abgeschlossen. Starte Installation..."
+sleep 2
+
 
 # Danach Hauptinstallation (Script-Block)
 echo -e "\e[1;32m[+] Starte Groundzero Setup...\e[0m"
