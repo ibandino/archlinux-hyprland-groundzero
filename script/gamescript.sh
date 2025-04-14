@@ -1,21 +1,10 @@
 #!/bin/bash
 set -e  # Stoppt das Skript bei Fehlern
 
-wait_for_user() {
-  echo
-  read -n1 -p "➡️  Weiter mit [j] drücken..." REPLY
-  if [[ $REPLY != "j" ]]; then
-    echo -e "\n❌ Abbruch – du hast nicht 'j' gedrückt."
-    exit 1
-  fi
-  echo -e "\n✅ Weiter..."
-}
-
 echo "📦 System wird aktualisiert..."
 sudo pacman -Syu --noconfirm
 echo "⏳ Warte 3 Sekunden..."
 sleep 3
-wait_for_user
 
 echo "📥 Installiere Gaming-Komponenten (pacman + yay)..."
 
@@ -29,7 +18,6 @@ sudo pacman -S --noconfirm \
 
 echo "⏳ Warte 3 Sekunden..."
 sleep 3
-wait_for_user
 
 # Yay prüfen & ggf. installieren
 if ! command -v yay &> /dev/null; then
@@ -42,13 +30,11 @@ if ! command -v yay &> /dev/null; then
     rm -rf yay
     echo "⏳ Warte 3 Sekunden..."
     sleep 3
-    wait_for_user
 fi
 
 echo "📥 Installiere PortProton über AUR..."
 yay -S --noconfirm portproton
 echo "⏳ Warte 3 Sekunden..."
 sleep 3
-wait_for_user
 
 echo "✅ Fertig! Alle Gaming-Tools sind installiert."
