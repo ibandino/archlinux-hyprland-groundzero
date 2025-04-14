@@ -22,7 +22,7 @@ yay -S --noconfirm pyprland-git
 
 
 echo "✅ Hyprland + Pyprland | jetzt Desktop =  JaKooLit "
-git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
-cd archlinux-hyprland-groundzero
+git clone https://github.com/JaKooLit/Arch-Hyprland.git
+cd Arch-Hyprland
 chmod +x install.sh
 ./install.sh
