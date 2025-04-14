@@ -7,11 +7,11 @@ sleep 1
 # 1. Tools
 bash ./script/groundzerotools.sh
 
-# 2. Hyprland
-bash ./script/hyprland.sh
-
-# 3. Gamescript
+# 2. Gamescript
 bash ./script/gamescript.sh
+
+# 3. Hyprland JaKooLit + Updates
+bash ./script/hyprland.sh
 
 # 4. Labfactory (noch leer)
 bash ./script/labfactory.sh
