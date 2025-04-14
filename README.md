@@ -107,6 +107,7 @@ Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
     ├── gamescript.sh
     ├── labfactory.sh
     ├── groundzero.sh
+(beta)
     └── systemd/
         ├── groundzero-update.service
         └── groundzero-update.timer
