@@ -28,3 +28,4 @@ cat << "EOF"
 EOF
 echo -e "\e[0m"
 sleep 3
+paplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null &
