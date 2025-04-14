@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\e[1;36m[+] Starte Groundzero-Updateprozess...\e[0m"
+echo -e "\e[1;36m[+] Starte Groundzeroprozess...\e[0m"
 sleep 1
 
 # 1. Google Drive Terminalhilfe holen
