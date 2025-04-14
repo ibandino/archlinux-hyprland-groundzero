@@ -1,89 +1,104 @@
-```md
-# ArchLinux Hyprland Groundzero
+---
 
-Minimalistisches, auf Performance ausgelegtes ArchLinux-Hyprland-Setup mit Gaming-, System- und Terminal-Tools – optimiert für Power-User, Pro-Gamer und Terminalfreunde.
+```md
+# 🧱 ArchLinux Hyprland Groundzero
+
+Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux. Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.  
+Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Terminalhilfe.
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Schnellstart (2 Wege)
+
+### 🌀 Via `curl`:
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ibandino/archlinux-hyprland-groundzero/main/install.sh)
 ```
 
----
-
-## 🔧 Was installiert wird
-
-Die `install.sh` führt dich automatisch durch alle Kernkomponenten:
-
-1. `groundzerotools.sh`  
-   → Systemtools, CLI-Utilities, Basis-Setup für z.B. Git, neofetch, htop, bat usw.
-
-2. `hyprland.sh`  
-   → Installiert Hyprland samt Konfigurationen, Wayland-Umgebung, EWW, Waybar, Wallpapers, Themes etc.
-
-3. `gamescript.sh`  
-   → Performance-Tools, Gaming-Tweaks, PipeWire-Fixes, spezielle Komponenten für Enemy Territory & co.
-
-4. `labfactory.sh` *(Platzhalter für zukünftige Tools)*
-
-5. `groundzero.sh` *(Neu)*  
-   → Ein Meta-Skript, das regelmäßig alle obigen Komponenten neu ausführt und aktualisiert – automatisch alle **7 Tage**!
-
----
-
-## 🔁 Automatische Updates (alle 7 Tage)
-
-Damit dein System up-to-date bleibt, wird automatisch ein **systemd Timer** aktiviert, der wöchentlich folgende Dinge durchführt:
-
-- Alle Hauptkomponenten (`tools`, `hyprland`, `gamescript`) aktualisieren
-- Lokale Kopie eines **öffentlichen Google Drive Ordners** synchronisieren  
-  → dieser enthält .txt-Dateien mit praktischen Terminalhilfen
-
-**Technisch gelöst mit:**
-- `~/.config/groundzero/groundzero.sh` → Meta-Update-Script
-- `~/.config/systemd/user/groundzero-update.{service,timer}` → systemd Timer + Dienst
-- Timer aktiviert sich beim Install automatisch (`systemctl --user enable --now ...`)
-
----
-
-## 📁 Terminalhilfe aus Google Drive
-
-Ein öffentlicher Google-Ordner mit Terminal-Snippets wird regelmäßig in dein Home-Verzeichnis gesynct:
+### 💻 Via `git clone`:
 
 ```bash
-~/terminalhilfe/
+git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
+cd archlinux-hyprland-groundzero
+chmod +x install.sh
+./install.sh
 ```
-
-Darin enthalten sind kleine `.txt`-Dateien mit:
-- Bash-Befehlen
-- DNF/Pacman-Aliases
-- Download-Snippets
-- Wine/Proton/Pipewire-Tricks
-- etc.
-
-Diese Dateien werden **bei jedem automatischen Update geprüft & aktualisiert** – Änderungen auf dem Drive sind also sofort nach spätestens 7 Tagen bei dir lokal sichtbar.
 
 ---
 
-## 🛠 Manuelle Steuerung (optional)
+## 🔧 Komponenten
 
-Du kannst das Update auch jederzeit manuell auslösen:
+Die `install.sh` führt folgende Schritte aus:
+
+```bash
+# 1. Tools und Basics
+./script/groundzerotools.sh
+
+# 2. Hyprland Setup (Wayland, EWW, Themes etc.)
+./script/hyprland.sh
+
+# 3. Gaming Tuning + Extras
+./script/gamescript.sh
+
+# 4. Labfactory (Platzhalter)
+./script/labfactory.sh
+
+# 5. Groundzero Meta-Update-System (alle 7 Tage)
+./script/groundzero.sh
+```
+
+---
+
+## 🧠 Groundzero Autoupdate-System
+
+Ein systemd-gestützter Automatik-Updater sorgt für:
+
+✅ Wöchentliche Komplettupdates (alle Skripte werden neu ausgeführt)  
+✅ Aktualisierung des öffentlichen Google Drive Ordners mit `.txt`-Terminalhilfen
+
+### Enthaltene Dateien:
+```bash
+~/.config/groundzero/groundzero.sh
+~/.config/systemd/user/groundzero-update.timer
+~/.config/systemd/user/groundzero-update.service
+```
+
+### Timer wird automatisch aktiviert:
+
+```bash
+systemctl --user enable --now groundzero-update.timer
+```
+
+Manuell triggern:
 
 ```bash
 bash ~/.config/groundzero/groundzero.sh
-```
-
-Oder direkt via systemd:
-
-```bash
+# oder
 systemctl --user start groundzero-update.service
 ```
 
 ---
 
-## 📦 GitHub Struktur
+## 📁 Terminalhilfe aus Google Drive
+
+Ein öffentlicher Google Drive Ordner wird regelmäßig synchronisiert:
+
+```bash
+~/terminalhilfe/
+```
+
+Darin:  
+✅ Bash-Befehle  
+✅ Download-Snippets  
+✅ Wine / Proton / Systemtweaks  
+✅ Textdateien mit Terminalhilfen
+
+Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
+
+---
+
+## 📂 Repo-Struktur
 
 ```bash
 .
@@ -101,11 +116,19 @@ systemctl --user start groundzero-update.service
 
 ---
 
-## 📢 Hinweis
+## 🧩 Modular und erweiterbar
 
-Das Setup ist modular aufgebaut – du kannst einzelne Komponenten durch Entfernen oder Ersetzen der Skripte anpassen.
+Du kannst jede Komponente einzeln anpassen, ersetzen oder erweitern.  
+Die Architektur bleibt trotzdem sauber und wartbar.
 
 ---
 
-> 💬 Fragen, Ideen oder Bugs? Erstelle ein Issue oder ping mich direkt. Viel Spaß mit Groundzero!
+## 📢 Feedback willkommen!
+
+Fragen, Bugs oder Erweiterungsideen?  
+→ Issue aufmachen oder direkt forken & verbessern.
+
+> 🫡 Willkommen in der Groundzero-Zone.
 ```
+
+---
