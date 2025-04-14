@@ -42,13 +42,11 @@ Die `install.sh` führt folgende Schritte aus:
 # 4. Labfactory (Platzhalter)
 ./script/labfactory.sh
 
-# 5. Groundzero Meta-Update-System (alle 7 Tage)
-./script/groundzero.sh
 ```
 
 ---
 
-## 🧠 Groundzero Autoupdate-System
+## 🧠 Groundzero Autoupdate-System (beta)
 
 Ein systemd-gestützter Automatik-Updater sorgt für:
 
