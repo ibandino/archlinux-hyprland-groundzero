@@ -1,1 +1,6 @@
+[Unit]
+Description=Groundzero Gesamt-Update (Hyprland, Terminalhilfe etc.)
 
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/%u/archlinux-hyprland-groundzero/script/groundzero.sh
