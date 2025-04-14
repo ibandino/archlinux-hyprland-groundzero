@@ -1,7 +1,3 @@
-<img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="200"/>
-
-
-
 # 🧱 ArchLinux Hyprland Groundzero
 
 Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux.  
@@ -133,3 +129,5 @@ Fragen, Bugs oder Erweiterungsideen?
 → Issue aufmachen oder direkt forken & verbessern.
 
 > 🫡 Willkommen in der Groundzero-Zone.
+>
+> <img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="200"/>
