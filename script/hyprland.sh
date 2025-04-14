@@ -1,6 +1,11 @@
 #!/bin/bash
 echo "🔧 Installiere Hyprland mit JaKooLit..."
 
+
+
+# Github
+sudo pacman -S --noconfirm git
+
 # Pakete installieren (anpassen je nach deinem Repo oder AUR-Manager)
 sudo pacman -S --noconfirm hyprland hyprpaper xdg-desktop-portal-hyprland
 
