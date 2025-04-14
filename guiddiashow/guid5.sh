@@ -1,7 +1,6 @@
 #!/bin/bash
 clear
 echo -e "\e[1;36m"
-cat << "EOF"
 #                                  _                                      
 #                 /\              | |                                     
 #                /  \   ____    _ | |                                     
@@ -13,8 +12,10 @@ cat << "EOF"
 #  | \____/|| |   | |_| || |_| || | | |( (_| | / /____( (/ / | |   | |_| |
 #   \_____/ |_|    \___/  \____||_| |_| \____|(_______)\____)|_|    \___/ 
 #    
-EOF
 echo -e "\e[0m"
 sleep 4
 
 paplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null &
+echo -e "\n🔧 Drücke [Enter], um die Installation zu starten..."
+read
+
