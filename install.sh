@@ -15,3 +15,6 @@ bash ./script/gamescript.sh
 
 # 4. Labfactory (noch leer)
 bash ./script/labfactory.sh
+
+# 5. CleanUp Sektion 
+bash ./script/clean_groundzero.sh
