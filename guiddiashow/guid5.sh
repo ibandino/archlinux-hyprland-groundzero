@@ -17,3 +17,4 @@ EOF
 echo -e "\e[0m"
 sleep 4
 
+paplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null &
