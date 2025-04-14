@@ -20,8 +20,9 @@ echo "🌐 Installiere Hyprland und benötigte Tools über pacman/yay..."
 sudo pacman -S --noconfirm hyprland hyprpaper xdg-desktop-portal-hyprland
 yay -S --noconfirm pyprland-git
 
-echo "🎨 Lade JaKooLit Hyprland Configs..."
-mkdir -p ~/.config
-git clone https://github.com/ibandino/Arch-Hyprland-GroundZero ~/.config/hypr
 
-echo "✅ Hyprland + Pyprland + JaKooLit wurden installiert!"
+echo "✅ Hyprland + Pyprland | jetzt Desktop =  JaKooLit "
+git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
+cd archlinux-hyprland-groundzero
+chmod +x install.sh
+./install.sh
