@@ -1,24 +1,17 @@
 #!/bin/bash
 
-clear
-echo -e "\e[1;36m*** JaKooLit Arch Linux Setup ***\e[0m"
+echo "Willkommen zum Arch Linux Hyprland Groundzero Setup"
 
-ask_install() {
-    echo
-    read -p ">> Möchtest du $1 installieren? (y/n): " choice
-    if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-        bash scripts/$2
-    else
-        echo "Übersprungen: $1"
-    fi
-}
+read -p "Möchtest du Hyprland installieren? (y/n): " install_hyprland
+if [[ "$install_hyprland" == "y" ]]; then
+    bash script/hyprland.sh
+fi
 
-ask_install "Hyprland + JaKooLit Config" "hyprland.sh"
-ask_install "VLC Media Player" "vlc.sh"
-ask_install "Firefox Browser" "firefox.sh"
-ask_install "Steam (Native Version)" "steam.sh"
-ask_install "Telegram Desktop" "telegram.sh"
+read -p "Möchtest du VLC installieren? (y/n): " install_vlc
+if [[ "$install_vlc" == "y" ]]; then
+    bash script/vlc.sh
+fi
 
-echo
-echo -e "\e[1;32m✅ Installation abgeschlossen!\e[0m"
+# Weitere Abfragen für andere Komponenten
+
 
