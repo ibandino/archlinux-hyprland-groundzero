@@ -14,7 +14,7 @@ Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Term
 bash <(curl -s https://raw.githubusercontent.com/ibandino/archlinux-hyprland-groundzero/main/install.sh)
 ```
 
-### 💻 Via `git clone`:
+### 💻 Via `git clone` wenn du vorher - sudo pacman -S git - machst dann :
 
 ```bash
 git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
