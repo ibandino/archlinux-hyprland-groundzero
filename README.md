@@ -1,4 +1,5 @@
-![grafik](https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b)
+<img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="200"/>
+
 
 
 # 🧱 ArchLinux Hyprland Groundzero
