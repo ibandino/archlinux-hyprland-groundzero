@@ -1,7 +1,7 @@
-```md
 # 🧱 ArchLinux Hyprland Groundzero
 
-Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux. Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.  
+Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux.  
+Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.  
 Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Terminalhilfe.
 
 ---
@@ -56,6 +56,7 @@ Ein systemd-gestützter Automatik-Updater sorgt für:
 ✅ Aktualisierung des öffentlichen Google Drive Ordners mit `.txt`-Terminalhilfen
 
 ### Enthaltene Dateien:
+
 ```bash
 ~/.config/groundzero/groundzero.sh
 ~/.config/systemd/user/groundzero-update.timer
@@ -68,7 +69,7 @@ Ein systemd-gestützter Automatik-Updater sorgt für:
 systemctl --user enable --now groundzero-update.timer
 ```
 
-Manuell triggern:
+### Manuell triggern:
 
 ```bash
 bash ~/.config/groundzero/groundzero.sh
@@ -86,7 +87,8 @@ Ein öffentlicher Google Drive Ordner wird regelmäßig synchronisiert:
 ~/terminalhilfe/
 ```
 
-Darin:  
+Darin findest du:
+
 ✅ Bash-Befehle  
 ✅ Download-Snippets  
 ✅ Wine / Proton / Systemtweaks  
@@ -127,4 +129,3 @@ Fragen, Bugs oder Erweiterungsideen?
 → Issue aufmachen oder direkt forken & verbessern.
 
 > 🫡 Willkommen in der Groundzero-Zone.
-```
