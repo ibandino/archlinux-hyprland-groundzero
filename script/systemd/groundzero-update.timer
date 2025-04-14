@@ -1,1 +1,11 @@
+[Unit]
+Description=Groundzero Update alle 7 Tage
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=7d
+Unit=groundzero-update.service
+
+[Install]
+WantedBy=default.target
 
