@@ -45,7 +45,7 @@ Die `install.sh` führt folgende Schritte aus:
 # 1. Tools und Basics
 ./script/groundzerotools.sh
 
-# 2. Hyprland Setup (Wayland, EWW, Themes etc.)
+# 2.Original Hyprland JaKooLit Setup (Wayland, EWW, Themes etc.)
 ./script/hyprland.sh
 
 # 3. Gaming Tuning + Extras
@@ -84,7 +84,7 @@ Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
 ├── install.sh
 └── script/
     ├── groundzerotools.sh
-    ├── hyprland.sh
+    ├── hyprland.sh <-- beim walus install hat jakoolit ein grafik bug , ein install balken verdeckt das sudo passwort(JaKooLit Mini bugg)
     ├── gamescript.sh
     ├── labfactory.sh
     ├── groundzero.sh
