@@ -6,6 +6,14 @@ Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Term
 
 ---
 
+## 👣 Grundinstallation ArchLinux Iso , Minimal Install 
+```
+https://archlinux.org/download/
+```
+Tipp : Bei dem Kernel auswahl kannst du den standart linux Kernel
+der angekreutzt ist mit ctr + c (oder x) reseten , wähle danach den Linux-Zen aus um keine zwei kernel zu installieren(optional)
+
+
 ## ⚡ Schnellstart (2 Wege)
 
 ### 🌀 Via `curl`:
@@ -22,6 +30,10 @@ cd archlinux-hyprland-groundzero
 chmod +x install.sh
 ./install.sh
 ```
+Tipp: Installier nach dem archinstall im tty login danach erst - sudo pacman -S git - und dann geh den github weg ,
+das script ist modular aufgebaut und arbeitet sich bis zum hyrpland desktop punktuell durch ...
+Die wlan broadcam treiber sind nicht enthalten , da es zuviele verschiedene modelle gibt (dies manual selbst installieren),
+lan kabel geht aber immer .
 
 ---
 
