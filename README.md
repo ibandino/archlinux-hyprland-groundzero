@@ -58,37 +58,6 @@ Die `install.sh` führt folgende Schritte aus:
 
 ---
 
-## 🧠 Groundzero Autoupdate-System (beta)
-
-Ein systemd-gestützter Automatik-Updater sorgt für:
-
-✅ Wöchentliche Komplettupdates (alle Skripte werden neu ausgeführt)  
-✅ Aktualisierung des öffentlichen Google Drive Ordners mit `.txt`-Terminalhilfen
-
-### Enthaltene Dateien:
-
-```bash
-~/.config/groundzero/groundzero.sh
-~/.config/systemd/user/groundzero-update.timer
-~/.config/systemd/user/groundzero-update.service
-```
-
-### Timer wird automatisch aktiviert:
-
-```bash
-systemctl --user enable --now groundzero-update.timer
-```
-
-### Manuell triggern:
-
-```bash
-bash ~/.config/groundzero/groundzero.sh
-# oder
-systemctl --user start groundzero-update.service
-```
-
----
-
 ## 📁 Terminalhilfe aus Google Drive
 
 Ein öffentlicher Google Drive Ordner wird regelmäßig synchronisiert:
@@ -119,7 +88,7 @@ Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
     ├── gamescript.sh
     ├── labfactory.sh
     ├── groundzero.sh
-(beta)
+(betaphase)
     └── systemd/
         ├── groundzero-update.service
         └── groundzero-update.timer
