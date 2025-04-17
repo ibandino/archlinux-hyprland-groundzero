@@ -55,9 +55,9 @@ Falls der automatische Download fehlschlägt, kannst du das System-Image manuell
 ```bash
 wget https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_x86_64/lineage-18.1-20250416-VANILLA-waydroid_x86_64-system.zip/download
 ```
-## 🧠 Hinweise für dein Installationskript
+## 🧠 Hinweise 
 
-- Stelle sicher, dass dein Kernel die `binder`- und `ashmem`-Module unterstützt (z. B. `liux-zen`). citeturn0sarch1
-- Waydroid funktioniert nur mit Wayland-Compositors und ist nicht mit proprietären NVIDIA-Treibern kmpatibel. citeturn0sarch1
-- Für eine vollständige Integration kannst du die `.desktop`-Datei in dein Skript einbinden, um Waydroid im Anwendungsmenü sichtbar u machen
+Stelle sicher, dass dein Kernel die `binder`- und `ashmem`-Module unterstützt (z. B. `liux-zen`). citeturn0sarch1
+Waydroid funktioniert nur mit Wayland-Compositors und ist nicht mit proprietären NVIDIA-Treibern kmpatibel. citeturn0sarch1
+Für eine vollständige Integration kannst du die `.desktop`-Datei in dein Skript einbinden, um Waydroid im Anwendungsmenü sichtbar u machen
 
