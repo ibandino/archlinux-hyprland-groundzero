@@ -2,21 +2,25 @@
 
 [![Demo-Video ansehen](https://img.youtube.com/vi/nBtTQXCSSMw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nBtTQXCSSMw)
 
-Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux.  
-Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.  
-Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Terminalhilfe und AndroidSpiegel.
+Ein ultraleichtes und modulares Hyprland-Setup für Arch Linux.
+Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.
+Automatisch aktualisierbar, mit Gaming-Optimierungen, integrierter Terminalhilfe und Android-Spiegelung.
 
-die grundinstallations kann über den schnellstart weg bei spiegelserver problemen oder auch installations probleme einfach wiederohlt werden , die installierten packete werden geskippt .
-beim JaKooLit Hyprland kann es aufgrund von Walus einen Balken lade balken bugg geben wo man nach gefühlt sein passwort eingeben muss .... an dem Bugg bin ich nicht schuld , ist fest verdrahtet mit dem JaKooLit projekt um updates aus erster hand zu gewährleisten ..... 
+Die Grundinstallation kann über den Schnellstart jederzeit wiederholt werden – bei Spiegelserver-Problemen oder Installationsfehlern werden bereits installierte Pakete dabei automatisch übersprungen.
 
-Das GroundZero setup ist ein vollumfängliches grundstarter set und hat alles ONBOARD was ein gamer oder auch workarround benötigt ..... alles wird grundsätzlich mit den arch paket quellen oder yay aktualisiert ....
+Beim JaKooLit-Hyprland kann es durch Walus zu einem Ladebalken-Bug kommen, bei dem man sein Passwort "gefühlt blind" eingeben muss. Für diesen Bug bin ich nicht verantwortlich – er ist fest im JaKooLit-Projekt verdrahtet, um Updates aus erster Hand zu gewährleisten.
 
-Der fokus hier liegt in der art und weise wie man seinen Desktop steuern kann , durch ein druck aus Super + H wird einem auch angezeigt was Keyboard First bedeutet und wie man es kontrolliert ...
+Das GroundZero-Setup ist ein vollwertiges Starter-Kit und bringt alles mit, was ein Gamer oder Workaround-Nutzer braucht.
+Alle Pakete werden grundsätzlich über die Arch-Repos oder mit yay aktuell gehalten.
 
-Einen Schnelleren und besseren Desktop werdet ihr nicht mal bei Gnome finden .... Hyprland ist allen weit veraus ..... seht GroundZero als cleaninstall anlaufstelle , genau dafür wurde es erstellt .
+Der Fokus liegt klar auf der Art, wie man seinen Desktop steuert:
+Mit Super + H wird erklärt, was „Keyboard First“ bedeutet – und wie du volle Kontrolle bekommst.
 
-schnell und einsatzbereit mit allem was benötigt wird 
+Einen schnelleren und besseren Desktop findest du nicht mal bei GNOME.
+Hyprland ist allen weit voraus.
+GroundZero ist deine Clean-Install-Anlaufstelle – genau dafür wurde es entwickelt.
 
+→ Schnell, einsatzbereit, und mit allem ausgestattet, was du brauchst.
 ## 👣 Grundinstallation ArchLinux Iso , Minimal Install 
 ```
 https://archlinux.org/download/
