@@ -1,32 +1,38 @@
 # ─────────────────────────────────────────────────────────
-# SCRCPY WLAN SPIEGELUNGSMODUL – für Android over Wi-Fi
-# Ort: labfactory.sh oder modular eingebunden
+# 📱 SCRCPY WLAN SPIEGELUNG – Android over Wi-Fi (nahtlos)
+# Ort: labfactory.sh – ready-to-plug-in für GroundZero
 # ─────────────────────────────────────────────────────────
 
-echo "📱 [SCRCPY] Installation & WLAN-Auto-Modus wird eingerichtet ..."
+echo "📲 [SCRCPY] Installation, UDEV, WLAN-Modus & Launcher Setup ..."
 
-# 1. SCRCPY installieren (offizielles Repo)
-sudo pacman -S scrcpy android-tools --noconfirm
+# 1. Abhängigkeiten installieren
+sudo pacman -S --noconfirm scrcpy android-tools android-udev xdg-utils
 
-# 2. Bash-Script für WLAN-Verbindung & Spiegelung
-mkdir -p ~/.local/bin
+# 2. Lokale Skriptstruktur vorbereiten
+mkdir -p ~/.local/bin ~/.local/share/applications
 
+# 3. WLAN-Script anlegen (automatische IP-Erkennung + fallback)
 cat <<'EOF' > ~/.local/bin/scrcpy-wifi.sh
 #!/bin/bash
 IP=$(adb shell ip route | awk '{print $9}')
+if [[ -z "$IP" ]]; then
+  notify-send "SCRCPY" "⚠️ Keine WLAN-IP erkannt. USB-Verbindung nötig?" --icon=dialog-warning
+  exit 1
+fi
 adb tcpip 5555
+sleep 1
 adb connect "$IP:5555"
+sleep 1
 scrcpy
 EOF
 
 chmod +x ~/.local/bin/scrcpy-wifi.sh
 
-# 3. Desktop-Starter erzeugen
-mkdir -p ~/.local/share/applications
-
+# 4. .desktop-Starter erzeugen
 cat <<EOF > ~/.local/share/applications/scrcpy-wifi.desktop
 [Desktop Entry]
 Name=Android Spiegelung (WLAN)
+Comment=Spiegelt dein Android-Gerät drahtlos über ADB
 Exec=/home/$USER/.local/bin/scrcpy-wifi.sh
 Icon=phone
 Type=Application
@@ -35,15 +41,14 @@ StartupNotify=false
 Terminal=false
 EOF
 
-# 4. Shortcut auffindbar machen
+# 5. App-Verknüpfung registrieren
 update-desktop-database ~/.local/share/applications &>/dev/null
 
-echo "✅ [SCRCPY] WLAN-Spiegelung jetzt über App-Launcher verfügbar."
+# 6. Hinweis für den User
+echo "✅ [SCRCPY] WLAN-Spiegelung bereit! Starte per App-Launcher oder via scrcpy-wifi.sh"
+echo "👉 Bitte aktiviere USB-Debugging auf deinem Android-Gerät"
+echo "👉 Verbinde es einmal per USB – danach funktioniert WLAN automatisch"
 
-echo ">>> Android Setup starten ..."
-sudo pacman -S scrcpy android-udev --noconfirm
-
-echo ">>> Bitte USB-Debugging am Handy aktivieren und Gerät anschließen!"
-echo "Gerät wird direkt als Freies Fenster angezeigt"
-read -p "Drücke [Enter], wenn bereit ..."
-scrcpy
+# 7. (Optionaler Test direkt nach Setup, nur wenn gewünscht)
+# echo "🔍 Starte Erkennung ..."
+# read -p "Drücke [Enter], um das Gerät jetzt zu spiegeln (USB oder WLAN) ..." && scrcpy
