@@ -40,3 +40,10 @@ update-desktop-database ~/.local/share/applications &>/dev/null
 
 echo "✅ [SCRCPY] WLAN-Spiegelung jetzt über App-Launcher verfügbar."
 
+echo ">>> Android Setup starten ..."
+sudo pacman -S scrcpy android-udev --noconfirm
+
+echo ">>> Bitte USB-Debugging am Handy aktivieren und Gerät anschließen!"
+echo "Gerät wird direkt als Freies Fenster angezeigt"
+read -p "Drücke [Enter], wenn bereit ..."
+scrcpy
