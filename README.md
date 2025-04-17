@@ -1,13 +1,10 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nBtTQXCSSMw?si=3DEGnaq8rvU8ltQP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
 # 🧱 ArchLinux Hyprland Groundzero
+
+[![Demo-Video ansehen](https://img.youtube.com/vi/nBtTQXCSSMw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nBtTQXCSSMw)
 
 Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux.  
 Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.  
-Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Terminalhilfe.
-
----
+Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Terminalhilfe und AndroidSpiegel.
 
 ## 👣 Grundinstallation ArchLinux Iso , Minimal Install 
 ```
@@ -18,15 +15,12 @@ der angekreutzt ist mit ctr + c (oder x) reseten , wähle danach den Linux-Zen a
 
 
 ## ⚡ Schnellstart (2 Wege)
-
 ### 🌀 Via `curl`:
-
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ibandino/archlinux-hyprland-groundzero/main/install.sh)
 ```
 
-### 💻 Via `git clone` wenn du vorher - sudo pacman -S git - machst dann :
-
+### 💻 Via `git clone` :
 ```bash
 git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
 cd archlinux-hyprland-groundzero
@@ -38,12 +32,8 @@ das script ist modular aufgebaut und arbeitet sich bis zum hyrpland desktop punk
 Die wlan broadcam treiber sind nicht enthalten , da es zuviele verschiedene modelle gibt (dies manual selbst installieren),
 lan kabel geht aber immer .
 
----
-
 ## 🔧 Komponenten
-
 Die `install.sh` führt folgende Schritte aus:
-
 ```bash
 # 1. Tools und Basics
 ./script/groundzerotools.sh
@@ -58,19 +48,13 @@ Die `install.sh` führt folgende Schritte aus:
 ./script/labfactory.sh
 
 ```
-
----
-
 ## 📁 Terminalhilfe aus Google Drive
-
 Ein öffentlicher Google Drive Ordner wird regelmäßig synchronisiert:
-
 ```bash
 ~/terminalhilfe/
 ```
 
 Darin findest du:
-
 ✅ Bash-Befehle  
 ✅ Download-Snippets  
 ✅ Wine / Proton / Systemtweaks  
@@ -78,10 +62,7 @@ Darin findest du:
 
 Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
 
----
-
 ## 📂 Repo-Struktur
-
 ```bash
 .
 ├── install.sh
@@ -97,22 +78,15 @@ Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
         └── groundzero-update.timer
 ```
 
----
-
 ## 🧩 Modular und erweiterbar
-
 Du kannst jede Komponente einzeln anpassen, ersetzen oder erweitern.  
 Die Architektur bleibt trotzdem sauber und wartbar.
 
----
-
 ## 📢 Feedback willkommen!
-
 Fragen, Bugs oder Erweiterungsideen?  
 → Issue aufmachen oder direkt forken & verbessern.
 
 > 🫡 Willkommen in der Groundzero-Zone.
->
-> <img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="200"/>
+> <img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="100"/>
 
 
