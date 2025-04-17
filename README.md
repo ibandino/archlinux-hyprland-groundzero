@@ -135,8 +135,8 @@ yay -S waydroid --noconfirm
 
 # 4. Waydroid initialisieren (VANILLA oder GAPPS möglich)
 sudo waydroid init -s VANILLA
-# oder mit Google-Diensten:
-# sudo waydroid init -s GAPPS
+oder mit Google-Diensten:
+sudo waydroid init -s GAPPS
 
 # 5. Waydroid-Container aktivieren & starten
 sudo systemctl enable waydroid-container
