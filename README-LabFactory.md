@@ -1,5 +1,5 @@
 ---
-## 📦 Installierte Pakete
+## 📦 Installierte Pakete Waydroid Container für Android
 ### 🔧 System- und AUR-Werkzeuge
 ```bash
 sudo pacman -S git base-devel wget python-pyxdg lzip sudo --noconfirm
