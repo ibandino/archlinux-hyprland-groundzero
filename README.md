@@ -111,3 +111,41 @@ Fragen, Bugs oder Erweiterungsideen?
 > 🫡 Willkommen in der Groundzero-Zone.
 >
 > <img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="200"/>
+
+
+
+##############################################################################################
+
+LabFactory.sh
+
+### 🟢 Waydroid (Android-Unterstützung unter Arch + Hyprland)
+
+Mit Waydroid kannst du eine vollständige Android-Umgebung direkt auf deinem Linux-System ausführen. Perfekt als Add-On für mobile App-Tests, zusätzliche Features oder Lightweight-Android-Nutzung auf dem Desktop.
+
+#### 🔹 Installation von Grund auf inklusive anleitung
+# 1. Abhängigkeiten
+sudo pacman -S git base-devel wget python-pyxdg lzip sudo --noconfirm
+
+# 2. yay installieren (falls noch nicht vorhanden)
+git clone https://aur.archlinux.org/yay.git
+cd yay && makepkg -si --noconfirm && cd ~ && rm -rf yay
+
+# 3. Waydroid aus dem AUR installieren
+yay -S waydroid --noconfirm
+
+# 4. Waydroid initialisieren (VANILLA oder GAPPS möglich)
+sudo waydroid init -s VANILLA
+# oder mit Google-Diensten:
+# sudo waydroid init -s GAPPS
+
+# 5. Waydroid-Container aktivieren & starten
+sudo systemctl enable waydroid-container
+sudo systemctl start waydroid-container
+
+# 6. GUI starten
+waydroid session start
+
+# 7. Status & Log prüfen (Fehlersuche)
+waydroid status
+waydroid log
+
