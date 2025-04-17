@@ -1,16 +1,29 @@
-Android-Spiegelung (SCRCPY WLAN-Modul) = Android
+Android-Spiegelung (SCRCPY-Modul)
 
-    Neues Feature – kabellose Spiegelung deines Android-Geräts direkt unter Hyprland!
-    Ideal für Development, Präsentationen oder als Zweitbildschirm über dein Handy/Tablet.
+    Neu: Nutze dein Android-Gerät kabellos über WLAN als Bildschirm oder Kontroll-Panel!
 
-🛠️ Installation erfolgt automatisch via labfactory.sh:
-Das Modul installiert scrcpy + adb, erstellt ein WLAN-Auto-Connect-Skript und erzeugt einen Desktop-Starter (Android Spiegelung (WLAN)), den du einfach über dein App-Launcher-Menü öffnen kannst.
+Dieses Modul integriert SCRCPY direkt ins System inklusive:
 
-💡 Voraussetzung:
-Einmaliges USB-Verbinden zum Einlernen deines Geräts durch adb. Danach funktioniert alles kabellos über WLAN.
+    Automatischer Installation via labfactory.sh
 
-🔧 Shortcut wird automatisch erzeugt unter:
-~/.local/share/applications/scrcpy-wifi.desktop
+    Bash-Skript für Auto-Connect über WLAN
 
-📂 Skript befindet sich in:
-~/.local/bin/scrcpy-wifi.sh
+    Desktop-Starter: „Android Spiegelung (WLAN)”
+
+    Keine Terminal-Nutzung notwendig
+
+🔧 Ablauf:
+
+    Handy einmal per USB verbinden
+
+    USB-Debugging aktivieren
+
+    Danach: nur noch WLAN nutzen – Verbindung erfolgt automatisch
+
+🗂️ Skripte & Dateien:
+
+    ~/.local/bin/scrcpy-wifi.sh → Auto-WLAN & Start
+
+    ~/.local/share/applications/scrcpy-wifi.desktop → App-Starter für Hyprland
+
+✅ Verfügbar im App-Launcher unter „Android Spiegelung (WLAN)”
