@@ -113,3 +113,6 @@ Das Lab bekommt auch noch seinen eigenen abgestimmten Gui der alle paar wochen a
 Dieser "Wahlfunktion"wird schluss endlich so eingebaut das wenn der user online kommt und sein rechner hochfährt , das ein groundzero update zur verfügung sein wird , das man annehmen oder ablehnen kann inklusive configs die schon bearbeitet werden , werden selbst bei neu erstellte zshrc usw , als backend abgespeichert ... griff bereit im home ordner oder bei den jeweiligen komponenten ....
 
 wahlen werden sich höchstwarscheinlich immer zwischen diesen zwei zyklen bewegen , update - wahlperiode - down oder update ...... Garantiert User Umfragen (keine werbung) ....
+
+
+Den Nur auf den weg der Aktzeptanz von Ligitimen rückfragen und Feedback optionen , kann man als offene gemeinde auch wirklich standarts setzen ... ich halte das für einen guten weg , der nicht ausgenutzt gehört .
