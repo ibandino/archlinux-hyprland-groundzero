@@ -1,4 +1,11 @@
----
+Disclaimer.md BetaLab
+#################################################################
+Waydroid ist aktuell keine stabile Lösung, wenn du eine freie 
+Android-Umgebung zum App-Installieren brauchst.
+Es sieht aus wie Android, fühlt sich aber wie ein
+"Sandbox-Spielzeug" an, bei dem alles hart gedeckelt ist.
+#################################################################
+
 ## 📦 Installierte Pakete Waydroid Container für Android
 ### 🔧 System- und AUR-Werkzeuge
 ```bash
