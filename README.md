@@ -90,3 +90,7 @@ Fragen, Bugs oder Erweiterungsideen?
 > <img src="https://github.com/user-attachments/assets/4f9540f5-c56c-42e6-879a-d3145e49210b" alt="Logo" width="100"/>
 
 
+# LabFactory
+Dient als test Werzeug für neue Elemente , ganz ähnlich dem Fedora Prizip Von Redhat ....
+Was gut ist wird fest integriert , was sich für irrelevant herausstellt geht wieder weg ......
+Das Lab bekommt auch noch seine eigenen abstimmt Gui der alle paar wochen aufploppt und die User selbst Befragt welche Optionen sinnvoll sinn und welche eher nicht 
