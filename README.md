@@ -110,9 +110,13 @@ Dient als test Werzeug für neue Elemente , ganz ähnlich dem Fedora Prinzip Von
 Was gut ist wird fest integriert , was sich für irrelevant herausstellt geht wieder weg ......
 Das Lab bekommt auch noch seinen eigenen abgestimmten Gui der alle paar wochen aufploppt und die User selbst Befragt welche Optionen sinnvoll sinn und welche eher nicht , quasi Online wahlen die über die funktionen entscheiden und zwar beim user selbst . 
 
-Dieser "Wahlfunktion"wird schluss endlich so eingebaut das wenn der user online kommt und sein rechner hochfährt , das ein groundzero update zur verfügung sein wird , das man annehmen oder ablehnen kann inklusive configs die schon bearbeitet werden , werden selbst bei neu erstellte zshrc usw , als backend abgespeichert ... griff bereit im home ordner oder bei den jeweiligen komponenten ....
+Diese „Wahlfunktion“ wird schließlich so eingebaut, dass – sobald der User online geht und sein Rechner hochfährt – ein GroundZero-Update zur Verfügung steht.
+Dieses kann angenommen oder abgelehnt werden. Bereits bearbeitete Configs, wie etwa .zshrc und andere, werden im Backend automatisch gespeichert – entweder im Home-Verzeichnis oder bei den jeweiligen Komponenten – und stehen dort jederzeit griffbereit zur Verfügung.
 
-wahlen werden sich höchstwarscheinlich immer zwischen diesen zwei zyklen bewegen , update - wahlperiode - down oder update ...... Garantiert User Umfragen (keine werbung) ....
+Die Wahlzyklen werden sich höchstwahrscheinlich immer zwischen zwei Zuständen bewegen:
+Update → Wahlperiode → Down oder direkt Update.
 
-♨️
-Den Nur auf den weg der Aktzeptanz von Ligitimen rückfragen und Feedback optionen , kann man als offene gemeinde auch wirklich standarts setzen ... ich halte das für einen guten weg , der nicht ausgenutzt gehört .
+✅ Garantiert werden Umfragen stattfinden – jedoch ohne jegliche Werbung.
+
+♨️ Nur über den Weg der Akzeptanz legitimer Rückfragen und offener Feedback-Optionen kann man als Gemeinschaft wirklich Standards setzen.
+Ich halte das für einen guten und respektvollen Weg, der nicht ausgenutzt werden sollte.
