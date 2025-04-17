@@ -83,7 +83,7 @@ Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
 ├── install.sh
 └── script/
     ├── groundzerotools.sh
-    ├── hyprland.sh <-- beim walus install hat jakoolit ein grafik bug , ein install balken verdeckt das sudo passwort(JaKooLit Mini bugg)
+    ├── hyprland.sh <-- beim walus install hat jakoolit ein grafik bug , ein install balken verdeckt das sudo passwort, es ist ersichtlich wenn walus 20 minuten nicht weiter updaten wo die eingabe ist(JaKooLit Mini bugg) - immer noch vom hersteller abhängig den bug zu debuggen
     ├── gamescript.sh
     ├── labfactory.sh
     ├── groundzero.sh
