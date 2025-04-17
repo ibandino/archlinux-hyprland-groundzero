@@ -6,6 +6,17 @@ Ein ultraleichtes und modulares Hyprland-Setup für ArchLinux.
 Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.  
 Automatisch aktualisierbar, mit Gaming-Optimierungen und einer integrierten Terminalhilfe und AndroidSpiegel.
 
+die grundinstallations kann über den schnellstart weg bei spiegelserver problemen oder auch installations probleme einfach wiederohlt werden , die installierten packete werden geskippt .
+beim JaKooLit Hyprland kann es aufgrund von Walus einen Balken lade balken bugg geben wo man nach gefühlt sein passwort eingeben muss .... an dem Bugg bin ich nicht schuld , ist fest verdrahtet mit dem JaKooLit projekt um updates aus erster hand zu gewährleisten ..... 
+
+Das GroundZero setup ist ein vollumfängliches grundstarter set und hat alles ONBOARD was ein gamer oder auch workarround benötigt ..... alles wird grundsätzlich mit den arch paket quellen oder yay aktualisiert ....
+
+Der fokus hier liegt in der art und weise wie man seinen Desktop steuern kann , durch ein druck aus Super + H wird einem auch angezeigt was Keyboard First bedeutet und wie man es kontrolliert ...
+
+Einen Schnelleren und besseren Desktop werdet ihr nicht mal bei Gnome finden .... Hyprland ist allen weit veraus ..... seht GroundZero als cleaninstall anlaufstelle , genau dafür wurde es erstellt .
+
+schnell und einsatzbereit mit allem was benötigt wird 
+
 ## 👣 Grundinstallation ArchLinux Iso , Minimal Install 
 ```
 https://archlinux.org/download/
