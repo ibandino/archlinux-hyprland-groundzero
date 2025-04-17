@@ -70,10 +70,10 @@ Ein öffentlicher Google Drive Ordner wird regelmäßig synchronisiert:
 ```
 
 Darin findest du:
-✅ Bash-Befehle  
-✅ Download-Snippets  
-✅ Wine / Proton / Systemtweaks  
-✅ Textdateien mit Terminalhilfen
+♨️ Bash-Befehle  
+♨️ Download-Snippets  
+♨️ Wine / Proton / Systemtweaks  
+♨️ Textdateien mit Terminalhilfen
 
 Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
 
@@ -114,5 +114,5 @@ Dieser "Wahlfunktion"wird schluss endlich so eingebaut das wenn der user online 
 
 wahlen werden sich höchstwarscheinlich immer zwischen diesen zwei zyklen bewegen , update - wahlperiode - down oder update ...... Garantiert User Umfragen (keine werbung) ....
 
-
+♨️
 Den Nur auf den weg der Aktzeptanz von Ligitimen rückfragen und Feedback optionen , kann man als offene gemeinde auch wirklich standarts setzen ... ich halte das für einen guten weg , der nicht ausgenutzt gehört .
