@@ -81,7 +81,12 @@ echo "(_____|  ___  | \   / |  _____|     __| |     |  ___  | (\ 
 echo "      | (   ) |  ) (  | (     | (\ (  | |     | (   ) | | \   | |   ) |         "
 echo "      | )   ( |  | |  | )     | ) \ \_| (____/| )   ( | )  \  | (__/  )     2025"
 echo "      |/     \|  \_/  |/      |/   \__(_______|/     \|/    )_(______/ ArchLinux"
-echo "                                                                                "
+echo "  inspirit of JaKooLit - Best Desktop - lokalFork - Community Hyprland Hub      "
+echo "   GroundZero wird entwickelt und weitergeführt im Sinne der Philosophie :      "
+echo "  Nur MultiModulareSysteme mit Extrem Guter Feedback bindung zum MitNutzer      "
+echo "      kann opensource zum industrie standart für Freie - Kernstarken -          "
+echo "    Betriebsysteme , mutieren lassen und zeigen was ein Ar(s)ch System          "
+echo "         wirklich zu bedeuten hat wenn es mit Hyprland Fährt   !                "   
 echo -e "\e[0m" # Farbe zurücksetzen
 printf "\n%.0s" {1..1}
 
