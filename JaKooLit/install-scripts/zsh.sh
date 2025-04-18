@@ -1,5 +1,5 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
+# JaKooLit mdifikations GroundZero
 # zsh and oh my zsh#
 
 zsh_pkg=(
