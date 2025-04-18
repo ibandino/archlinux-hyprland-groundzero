@@ -1,4 +1,5 @@
 #!/bin/bash
+# JaKooLit Hyprland
 # base-devel + archlinux-keyring #
 
 base=( 
