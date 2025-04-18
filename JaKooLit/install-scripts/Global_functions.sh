@@ -23,112 +23,99 @@ SKY_BLUE="$(tput setaf 6)"
 RESET="$(tput sgr0)"
 
 # Create Directory for Install Logs
-if [ ! -d Install-Logs ]; then
-    mkdir Install-Logs
-fi
+[ ! -d Install-Logs ] && mkdir Install-Logs
 
-# Show progress function
+# Show progress spinner
 show_progress() {
     local pid=$1
     local package_name=$2
-    local spin_chars=("●○○○○○○○○○" "○●○○○○○○○○" "○○●○○○○○○○" "○○○●○○○○○○" "○○○○●○○○○" \
-                      "○○○○○●○○○○" "○○○○○○●○○○" "○○○○○○○●○○" "○○○○○○○○●○" "○○○○○○○○○●") 
+    local spin_chars=("●○○○○○○○○○" "○●○○○○○○○○" "○○●○○○○○○○" "○○○●○○○○○○" "○○○○●○○○○○" \
+                      "○○○○○●○○○○" "○○○○○○●○○○" "○○○○○○○●○○" "○○○○○○○○●○" "○○○○○○○○○●")
     local i=0
 
-    tput civis 
+    tput civis
     printf "\r${NOTE} Installing ${YELLOW}%s${RESET} ..." "$package_name"
 
     while ps -p $pid &> /dev/null; do
         printf "\r${NOTE} Installing ${YELLOW}%s${RESET} %s" "$package_name" "${spin_chars[i]}"
-        i=$(( (i + 1) % 10 ))  
-        sleep 0.3  
+        i=$(( (i + 1) % 10 ))
+        sleep 0.3
     done
 
     printf "\r${NOTE} Installing ${YELLOW}%s${RESET} ... Done!%-20s \n" "$package_name" ""
-    tput cnorm  
+    tput cnorm
 }
 
-
-
-# Function to install packages with pacman
+# Install package with pacman
 install_package_pacman() {
-  # Check if package is already installed
-  if pacman -Q "$1" &>/dev/null ; then
+  if pacman -Q "$1" &>/dev/null; then
     echo -e "${INFO} ${MAGENTA}$1${RESET} is already installed. Skipping..."
   else
-    # Run pacman and redirect all output to a log file
     (
       stdbuf -oL sudo pacman -S --noconfirm "$1" 2>&1
     ) >> "$LOG" 2>&1 &
     PID=$!
-    show_progress $PID "$1" 
+    show_progress $PID "$1"
 
-    # Double check if package is installed
-    if pacman -Q "$1" &>/dev/null ; then
+    if pacman -Q "$1" &>/dev/null; then
       echo -e "${OK} Package ${YELLOW}$1${RESET} has been successfully installed!"
     else
-      echo -e "\n${ERROR} ${YELLOW}$1${RESET} failed to install. Please check the $LOG. You may need to install manually."
+      echo -e "\n${ERROR} ${YELLOW}$1${RESET} failed to install. Please check the $LOG."
     fi
   fi
 }
 
 ISAUR=$(command -v yay || command -v paru)
-# Function to install packages with either yay or paru
+
+# Install AUR package with yay or paru (with check)
 install_package() {
-  if $ISAUR -Q "$1" &>> /dev/null ; then
+  if $ISAUR -Q "$1" &>/dev/null; then
     echo -e "${INFO} ${MAGENTA}$1${RESET} is already installed. Skipping..."
   else
     (
       stdbuf -oL $ISAUR -S --noconfirm "$1" 2>&1
     ) >> "$LOG" 2>&1 &
     PID=$!
-    show_progress $PID "$1"  
-    
-    # Double check if package is installed
-    if $ISAUR -Q "$1" &>> /dev/null ; then
+    show_progress $PID "$1"
+
+    if $ISAUR -Q "$1" &>/dev/null; then
       echo -e "${OK} Package ${YELLOW}$1${RESET} has been successfully installed!"
     else
-      # Something is missing, exiting to review log
-      echo -e "\n${ERROR} ${YELLOW}$1${RESET} failed to install :( , please check the install.log. You may need to install manually! Sorry I have tried :("
+      echo -e "\n${ERROR} ${YELLOW}$1${RESET} failed to install. Check $LOG."
     fi
   fi
 }
 
-# Function to just install packages with either yay or paru without checking if installed
+# Install AUR package ohne Check
 install_package_f() {
   (
     stdbuf -oL $ISAUR -S --noconfirm "$1" 2>&1
   ) >> "$LOG" 2>&1 &
   PID=$!
-  show_progress $PID "$1"  
+  show_progress $PID "$1"
 
-  # Double check if package is installed
-  if $ISAUR -Q "$1" &>> /dev/null ; then
+  if $ISAUR -Q "$1" &>/dev/null; then
     echo -e "${OK} Package ${YELLOW}$1${RESET} has been successfully installed!"
   else
-    # Something is missing, exiting to review log
-    echo -e "\n${ERROR} ${YELLOW}$1${RESET} failed to install :( , please check the install.log. You may need to install manually! Sorry I have tried :("
+    echo -e "\n${ERROR} ${YELLOW}$1${RESET} failed to install. Check $LOG."
   fi
 }
 
-
-# Function for removing packages
+# Remove package via pacman
 uninstall_package() {
   local pkg="$1"
 
-  # Checking if package is installed
   if pacman -Qi "$pkg" &>/dev/null; then
-    echo -e "${NOTE} removing $pkg ..."
+    echo -e "${NOTE} Removing ${YELLOW}$pkg${RESET} ..."
     sudo pacman -R --noconfirm "$pkg" 2>&1 | tee -a "$LOG" | grep -v "error: target not found"
-    
+
     if ! pacman -Qi "$pkg" &>/dev/null; then
-      echo -e "\e[1A\e[K${OK} $pkg removed."
+      echo -e "\e[1A\e[K${OK} ${YELLOW}$pkg${RESET} removed."
     else
-      echo -e "\e[1A\e[K${ERROR} $pkg Removal failed. No actions required."
+      echo -e "\e[1A\e[K${ERROR} ${YELLOW}$pkg${RESET} removal failed."
       return 1
     fi
   else
-    echo -e "${INFO} Package $pkg not installed, skipping."
+    echo -e "${WARN} ${YELLOW}$pkg${RESET} is not installed."
   fi
-  return 0
 }
