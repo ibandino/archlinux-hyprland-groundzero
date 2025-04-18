@@ -30,11 +30,6 @@ der angekreutzt ist mit ctr + c (oder x) reseten , wähle danach den Linux-Zen a
 
 
 ## ⚡ Schnellstart (2 Wege)
-### 🌀 Via `curl`:
-```bash
-bash <(curl -s https://raw.githubusercontent.com/ibandino/archlinux-hyprland-groundzero/main/install.sh)
-```
-
 ### 💻 Via `git clone` :
 ```bash
 git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
