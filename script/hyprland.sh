@@ -22,7 +22,7 @@ yay -S --noconfirm pyprland-git
 
 
 echo "⚙️ Starte lokales JaKooLit-GroundZero-Setup..."
-cd ~/archlinux-hyprland-groundzero/JaKooLit
+cd "$(dirname "$(realpath "$0")")"/../JaKooLit
 chmod +x install.sh
 ./install.sh
 
