@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# JaKooLit Hyprland
 # Hyprland Packages #
 
 # edit your packages desired here. 
