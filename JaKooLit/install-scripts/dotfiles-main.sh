@@ -1,7 +1,6 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
-# Hyprland-Dots to download from main #
-
+# 💫 https://github.com/ibandino 💫 #
+# Hyprland-Dots from local repo (archlinux-hyprland-groundzero) #
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -16,22 +15,19 @@ if ! source "$(dirname "$(readlink -f "$0")")/Global_functions.sh"; then
   exit 1
 fi
 
-# Check if Hyprland-Dots exists
-printf "${NOTE} Cloning and Installing ${SKY_BLUE}KooL's Hyprland Dots${RESET}....\n"
+# Path to the local repo (adjust this if needed)
+LOCAL_DOTFILES_DIR="$PARENT_DIR/Hyprland-Dots-main"
 
-if [ -d Hyprland-Dots ]; then
-  cd Hyprland-Dots
-  git stash && git pull
+# Check if the Hyprland-Dots directory exists locally
+printf "${NOTE} Using local Hyprland Dots from ${LOCAL_DOTFILES_DIR}${RESET}....\n"
+
+if [ -d "$LOCAL_DOTFILES_DIR" ]; then
+  cd "$LOCAL_DOTFILES_DIR" || { echo "${ERROR} Failed to enter $LOCAL_DOTFILES_DIR"; exit 1; }
   chmod +x copy.sh
   ./copy.sh 
 else
-  if git clone --depth=1 https://github.com/JaKooLit/Hyprland-Dots; then
-    cd Hyprland-Dots || exit 1
-    chmod +x copy.sh
-    ./copy.sh 
-  else
-    echo -e "$ERROR Can't download ${YELLOW}KooL's Hyprland-Dots${RESET} . Check your internet connection"
-  fi
+  echo -e "$ERROR Can't find Hyprland-Dots in the local repository at $LOCAL_DOTFILES_DIR."
+  exit 1
 fi
 
 printf "\n%.0s" {1..2}
