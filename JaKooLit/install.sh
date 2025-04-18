@@ -1,5 +1,4 @@
 #!/bin/bash
-# https://github.com/JaKooLit
 
 clear
 
@@ -65,20 +64,33 @@ fi
 
 clear
 
-printf "\n%.0s" {1..2}  
-echo -e "\e[35m
-	╦╔═┌─┐┌─┐╦    ╦ ╦┬ ┬┌─┐┬─┐┬  ┌─┐┌┐┌┌┬┐
-	╠╩╗│ ││ │║    ╠═╣└┬┘├─┘├┬┘│  ├─┤│││ ││ 2025
-	╩ ╩└─┘└─┘╩═╝  ╩ ╩ ┴ ┴  ┴└─┴─┘┴ ┴┘└┘─┴┘ Arch Linux
-\e[0m"
-printf "\n%.0s" {1..1} 
+printf "\n%.0s" {1..2}
+echo -e "\e[35m" # Lila Farbe
+echo " _______ _______ _______         _       ______  _______ _______ _______ _______ "
+echo "(  ____ (  ____ (  ___  |\     /( (    /(  __  \/ ___   (  ____ (  ____ (  ___  )"
+echo "| (    \| (    )| (   ) | )   ( |  \  ( | (  \  \/   )  | (    \| (    )| (   ) |"
+echo "| |     | (____)| |   | | |   | |   \ | | |   ) |   /   | (__   | (____)| |   | |"
+echo "| | ____|     __| |   | | |   | | (\ \) | |   | |  /   /|  __)  |     __| |   | |"
+echo "| | \_  | (\ (  | |   | | |   | | | \   | |   ) | /   / | (     | (\ (  | |   ) |"
+echo "| (___) | ) \ \_| (___) | (___) | )  \  | (__/  )/   (_/| (____/| ) \ \_| (___) |"
+echo "(_______|/   \__(_____________________)_(_______________(____________\__(_______)"
+echo "      |\     /|\     /(  ____ (  ____ ( \     (  ___  ( (    /(  __  \          "
+echo "      | )   ( ( \   / | (    )| (    )| (     | (   ) |  \  ( | (  \  )         "
+echo " _____| (___) |\ (_) /| (____)| (____)| |     | (___) |   \ | | |   ) |_____    "
+echo "(_____|  ___  | \   / |  _____|     __| |     |  ___  | (\ \) | |   | (_____)   "
+echo "      | (   ) |  ) (  | (     | (\ (  | |     | (   ) | | \   | |   ) |         "
+echo "      | )   ( |  | |  | )     | ) \ \_| (____/| )   ( | )  \  | (__/  )     2025"
+echo "      |/     \|  \_/  |/      |/   \__(_______|/     \|/    )_(______/ ArchLinux"
+echo "                                                                                "
+echo -e "\e[0m" # Farbe zurücksetzen
+printf "\n%.0s" {1..1}
 
-# Welcome message using whiptail (for displaying information)
-whiptail --title "KooL Arch-Hyprland (2025) Install Script" \
-    --msgbox "Welcome to KooL Arch-Hyprland (2025) Install Script!!!\n\n\
+# Angepasste Willkommensnachricht mit deinem Projektnamen (Text)
+whiptail --title "GroundZero Hyprland (2025) Install Script" \
+    --msgbox "Welcome to GroundZero Hyprland (2025) Install Script!!!\n\n\
 ATTENTION: Run a full system update and Reboot first !!! (Highly Recommended)\n\n\
 NOTE: If you are installing on a VM, ensure to enable 3D acceleration else Hyprland may NOT start!" \
-    15 80
+    15 80
 
 # Ask if the user wants to proceed
 if ! whiptail --title "Proceed with Installation?" \
