@@ -51,6 +51,6 @@ echo "⚙️ System-Tools..."
 sudo pacman -S --noconfirm cpupower
 echo "⏳ Warte 3 Sekunden..."
 sleep 3
-wait_for_user
+read -rp "Drücke ENTER zum Fortfahren..."
 
 echo "✅ Alle Tools wurden erfolgreich installiert!"
