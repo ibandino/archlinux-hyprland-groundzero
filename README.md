@@ -1,4 +1,4 @@
-# 🧱 ArchLinux Hyprland Groundzero
+# 🧱 ArchLinux Hyprland GroundZerO
 
 [![Demo-Video ansehen](https://img.youtube.com/vi/nBtTQXCSSMw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nBtTQXCSSMw)
 
