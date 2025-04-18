@@ -17,10 +17,8 @@ BLUE="$(tput setaf 4)"
 SKY_BLUE="$(tput setaf 6)"
 RESET="$(tput sgr0)"
 
-# Variables
-Distro="Arch-Hyprland"
-Github_URL="https://github.com/JaKooLit/$Distro.git"
-Distro_DIR="$HOME/$Distro"
+Distro="JaKooLit"
+Distro_DIR="$HOME/archlinux-hyprland-groundzero/$Distro"
 
 printf "\n%.0s" {1..1}
 
