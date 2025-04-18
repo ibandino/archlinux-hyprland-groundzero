@@ -21,8 +21,8 @@ sudo pacman -S --noconfirm hyprland hyprpaper xdg-desktop-portal-hyprland
 yay -S --noconfirm pyprland-git
 
 
-echo "✅ Hyprland + Pyprland | jetzt Desktop =  JaKooLit "
-git clone --depth=1 https://github.com/JaKooLit/Arch-Hyprland.git ~/Arch-Hyprland
-cd ~/Arch-Hyprland
+echo "⚙️ Starte lokales JaKooLit-GroundZero-Setup..."
+cd ~/archlinux-hyprland-groundzero/JaKooLit
 chmod +x install.sh
 ./install.sh
+
