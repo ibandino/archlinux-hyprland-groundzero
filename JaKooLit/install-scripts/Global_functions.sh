@@ -1,8 +1,10 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
-# Global Functions for Scripts #
+# JaKooLit modifikation GroundZero
+# Global Functions for Scripts
 
 set -e
+
+LOG="${LOG:-Install-Logs/install.log}"
 
 # Set some colors for output messages
 OK="$(tput setaf 2)[OK]$(tput sgr0)"
