@@ -29,7 +29,7 @@ Tipp : Bei dem Kernel auswahl kannst du den standart linux Kernel
 der angekreutzt ist mit ctr + c (oder x) reseten , wähle danach den Linux-Zen aus um keine zwei kernel zu installieren(optional)
 
 
-## ⚡ Schnellstart (2 Wege)
+## ⚡ Schnellstart 
 ### 💻 Via `git clone` :
 ```bash
 git clone https://github.com/ibandino/archlinux-hyprland-groundzero.git
