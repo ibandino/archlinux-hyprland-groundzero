@@ -4,6 +4,9 @@
 echo -e "\e[1;32m[+] Starte Groundzero Setup...\e[0m"
 sleep 1
 
+# 0.GroundZero - Gemeinsame folge packete
+bash ./script/corepackages.sh
+
 # 1. Tools
 bash ./script/groundzerotools.sh
 
