@@ -31,7 +31,29 @@ info "# 1. Tools - Grundaustattung"
 continue_prompt
 bash ./script/groundzerotools.sh
 
+warn_pacman_conf() {
+  clear
+  echo -e "\e[1;33m"
+  echo "╔══════════════════════════════════════════════════════╗"
+  echo "║                                                      ║"
+  echo "║ ⚠️  Achtung! Um das Game-Script korrekt zu nutzen:     ║"
+  echo "║                                                      ║"
+  echo "║  Du musst in deiner /etc/pacman.conf die Multilib    ║"
+  echo "║  Sektion **aktivieren** (auskommentieren):           ║"
+  echo "║                                                      ║"
+  echo "║    [multilib]                                        ║"
+  echo "║    Include = /etc/pacman.d/mirrorlist                ║"
+  echo "║                                                      ║"
+  echo "║    Danach einmal: sudo pacman -Syy                   ║"
+  echo "║    cd archlinux-hyprland-groundzero/                 ║"
+  echo "║    und ./install neuausführen im                     ║"
+  echo "╚══════════════════════════════════════════════════════╝"
+  echo -e "\e[0m"
+  continue_prompt "verstanden!"
+}
+
 info "# 2. Gamescript"
+warn_pacman_conf
 continue_prompt
 bash ./script/gamescript.sh
 
