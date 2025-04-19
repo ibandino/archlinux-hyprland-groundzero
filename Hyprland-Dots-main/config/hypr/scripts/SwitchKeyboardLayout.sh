@@ -1,10 +1,10 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+
 # This is for changing kb_layouts. Set kb_layouts in $settings_file
 
 layout_file="$HOME/.cache/kb_layout"
-settings_file="$HOME/.config/hypr/UserConfigs/UserSettings.conf"
-notif_icon="$HOME/.config/swaync/images/ja.png"
+settings_file="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/UserConfigs/UserSettings.conf"
+notif_icon="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images/ja.png"
 
 # Refined ignore list with patterns or specific device names
 ignore_patterns=(
