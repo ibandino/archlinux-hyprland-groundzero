@@ -37,4 +37,15 @@ info "# 5. CleanUp Sektion"
 continue_prompt
 bash ./script/clean_groundzero.sh
 
-info "✅ Groundzero automatische Updates Finish"
+info "✅ Groundzero automatische Install Ohter Update Finish"
+
+# ARCH-LOGO in Regenbogenfarben anzeigen (mit lolcat)
+if command -v lolcat &> /dev/null; then
+  echo -e "\n" && cat ./art/archlogo.txt | lolcat
+else
+  echo -e "\n[+] Hinweis: 'lolcat' nicht installiert – ASCII-Logo ohne Farbe:\n"
+  cat ./art/archlogo.txt
+fi
+
+echo -e "\n\e[1;32m[✓] Setup abgeschlossen. Du kannst jetzt manuell rebooten oder direkt Hyprland starten!\e[0m"
+
