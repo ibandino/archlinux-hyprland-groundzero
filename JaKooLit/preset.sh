@@ -1,5 +1,3 @@
-# 💫 https://github.com/JaKooLit 💫 #
-
 # Define the options you want to preselect (either ON or OFF)
 # IMPORTANT: answer should be inside ""
 
