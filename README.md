@@ -15,7 +15,7 @@ Automatisch aktualisierbar, mit Gaming-Optimierungen, integrierter Terminalhilfe
 
 Die Grundinstallation kann über den Schnellstart jederzeit wiederholt werden – bei Spiegelserver-Problemen oder Installationsfehlern werden bereits installierte Pakete dabei automatisch übersprungen.
 
-Beim JaKooLit-Hyprland kann es durch Walus zu einem Ladebalken-Bug kommen, bei dem man sein Passwort "gefühlt blind" eingeben muss. Für diesen Bug bin ich nicht verantwortlich – er ist fest im JaKooLit-Projekt verdrahtet, um Updates aus erster Hand zu gewährleisten.
+Beim JaKooLit-Hyprland kann es durch Walus zu einem Ladebalken-Bug kommen, bei dem man sein Passwort "gefühlt blind" eingeben muss. Für diesen Bug bin ich nicht verantwortlich – er wird aber aber gefixed den das JaKooLit setup wird fester bestandteil im repo also Eigenständig.
 
 Das GroundZero-Setup ist ein vollwertiges Starter-Kit und bringt alles mit, was ein Gamer oder Workaround-Nutzer braucht.
 Alle Pakete werden grundsätzlich über die Arch-Repos oder mit yay aktuell gehalten.
