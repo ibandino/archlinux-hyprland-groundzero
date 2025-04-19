@@ -1,5 +1,5 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+
 # Screenshots scripts
 
 # variables
@@ -7,9 +7,9 @@ time=$(date "+%d-%b_%H-%M-%S")
 dir="$(xdg-user-dir)/Pictures/Screenshots"
 file="Screenshot_${time}_${RANDOM}.png"
 
-iDIR="$HOME/.config/swaync/icons"
-iDoR="$HOME/.config/swaync/images"
-sDIR="$HOME/.config/hypr/scripts"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/icons"
+iDoR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
+sDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts"
 
 active_window_class=$(hyprctl -j activewindow | jq -r '(.class)')
 active_window_file="Screenshot_${time}_${active_window_class}.png"
