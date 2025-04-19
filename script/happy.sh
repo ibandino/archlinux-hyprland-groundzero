@@ -84,3 +84,5 @@ ascii_final_check
 ascii_issue_hint
 
 info "Okay, GroundZero wird vorbereitet..."
+sleep 1
+clear
