@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Zentrale Installation gemeinsamer Pakete
-echo "📦 Installiere gemeinsame Pakete..."
+echo "📦 # 0 Installiere gemeinsame Pakete..."
 
 sudo pacman -S --noconfirm \
     neofetch \
@@ -16,6 +16,7 @@ sudo pacman -S --noconfirm \
     fastfetch \
     lsof \
     ripgrep \
-    fzf
+    fzf \
+    lolcat
 
 echo "✅ Gemeinsame Pakete installiert."
