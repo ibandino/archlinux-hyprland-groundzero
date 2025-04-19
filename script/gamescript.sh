@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e  # Stoppt das Skript bei Fehlern
 
+# Multilib-Repository sicherstellen
 if ! pacman -Si lib32-mesa &>/dev/null; then
     echo "🔧 Aktiviere Multilib-Repository..."
     sudo sed -i '/#\[multilib\]/,/#Include/ s/^#//' /etc/pacman.conf
     sudo pacman -Sy
 fi
-
 
 echo "📦 System wird aktualisiert..."
 sudo pacman -Syu --noconfirm
