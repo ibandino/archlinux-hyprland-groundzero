@@ -33,7 +33,7 @@ https://archlinux.org/download/
 ```
 Tipp : Bei dem Kernel auswahl kannst du den standart linux Kernel
 der angekreutzt ist mit ctr + c (sehbar am x) reseten , wähle danach den Linux-Zen aus um keine zwei kernel zu installieren(optional).
-Dieser Vorschritt wird später unötig da es eine eigene ArchLinux-GroundZero.iso geben wird ..... (in Arbeit)
+Dieser Vorschritt wird später unötig da es eine eigene ArchLinux-GroundZero.iso geben wird ..... (in Arbeit) = der daraus Folgende Linux-Zen-GroundZero Kernel bekommt ein passenden Header und Hyprland wird mit verbesserten und gereinigteren codes Fusioniert .... andere desktops sind ausgeschloßen weil die verdrahtung mit einer obefläche präziser und berechenbarer wird , hyprland ist der heilige gral zum vollzugriff auf den unterbau ..... wenn der rohschliff aus der beta geht bekommt das ganze erstmal eine passende iso ..... der kernel wird nachträglich integriert aber separiert installiert 
 
 ## ⚡ Schnellstart 
 ### 💻 Via `git clone` :
