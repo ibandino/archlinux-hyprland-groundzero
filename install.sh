@@ -1,42 +1,40 @@
 #!/bin/bash
 
-# Danach Hauptinstallation (Script-Block)
-echo -e "\e[1;32m[+] Starte Groundzero Setup...\e[0m"
-sleep 1
+info() { echo -e "\e[1;32m[+] $1 \e[0m"; }
+continue_prompt() {
+  echo -ne "\e[1;33m→ Drücke [ENTER] zum Fortfahren (oder warte 3 Sekunden) \e[0m"
+  read -t 3 -n 1 input
+  echo ""
+}
 
-echo -e "\e[1;32m[+] initialisiere \e[0m"
-sleep 1
+info "Starte Groundzero Setup..."
+continue_prompt
 
-echo -e "\e[1;32m[+] # 0.GroundZero - Gemeinsame folge packete \e[0m"
-sleep 1
-# 0.GroundZero - Gemeinsame folge packete
+info "initialisiere"
+continue_prompt
+
+info "# 0.GroundZero - Gemeinsame folge packete"
+continue_prompt
 bash ./script/corepackages.sh
 
-echo -e "\e[1;32m[+] # 1. Tools - grundaustattung \e[0m"
-sleep 1
-# 1. Tools
+info "# 1. Tools - Grundaustattung"
+continue_prompt
 bash ./script/groundzerotools.sh
 
-
-echo -e "\e[1;32m[+] # 2. Gamescript \e[0m"
-sleep 1
-# 2. Gamescript
+info "# 2. Gamescript"
+continue_prompt
 bash ./script/gamescript.sh
 
-echo -e "\e[1;32m[+] # 3. Hyprland JaKooLit Style + Updates + FullConfigs \e[0m"
-sleep 1
-# 3. Hyprland JaKooLit + Updates
+info "# 3. Hyprland JaKooLit Style + Updates + FullConfigs"
+continue_prompt
 bash ./script/hyprland.sh
 
-echo -e "\e[1;32m[+] # 4. Labfactory Sektion\e[0m"
-sleep 1
-# 4. Labfactory Sektion
+info "# 4. Labfactory Sektion"
+continue_prompt
 bash ./script/labfactory.sh
 
-echo -e "\e[1;32m[+] # 5. CleanUp Sektion \e[0m"
-sleep 1
-# 5. CleanUp Sektion 
+info "# 5. CleanUp Sektion"
+continue_prompt
 bash ./script/clean_groundzero.sh
 
-
-echo -e "\e[1;32m✅ Groundzero automatische Updates Finish\e[0m"
+info "✅ Groundzero automatische Updates Finish"
