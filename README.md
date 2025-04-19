@@ -2,6 +2,13 @@
 
 [![Demo-Video ansehen](https://img.youtube.com/vi/nBtTQXCSSMw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nBtTQXCSSMw)
 
+Ziel:
+
+Ein purer, unverbastelter Arch-Kern,
+kombiniert mit einer präzise geschliffenen Hyprland-Umgebung,
+kein Remix, kein Fork, sondern
+"Arch mit Sinn & Stil" – straight aus der Quelle, aber sofort ready für Pro-Use.
+
 Ein ultraleichtes und modulares Hyprland-Setup für Arch Linux.
 Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.
 Automatisch aktualisierbar, mit Gaming-Optimierungen, integrierter Terminalhilfe und Android-Spiegelung.
