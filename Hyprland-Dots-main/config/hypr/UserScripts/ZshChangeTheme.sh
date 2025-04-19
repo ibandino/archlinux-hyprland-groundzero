@@ -1,13 +1,12 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Script for Oh my ZSH theme ( CTRL SHIFT O)
 
+# Script for Oh my ZSH theme ( CTRL SHIFT O)
 # preview of theme can be view here: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # after choosing theme, TTY need to be closed and re-open
 
 # Variables
-iDIR="$HOME/.config/swaync/images"
-rofi_theme="$HOME/.config/rofi/config-zsh-theme.rasi"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-zsh-theme.rasi"
 
 if [ -n "$(grep -i nixos < /etc/os-release)" ]; then
   notify-send -i "$iDIR/note.png" "NOT Supported" "Sorry NixOS does not support this KooL feature"
