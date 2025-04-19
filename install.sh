@@ -32,24 +32,25 @@ continue_prompt
 bash ./script/groundzerotools.sh
 
 warn_pacman_conf() {
-  clear
   echo -e "\e[1;33m"
-  echo "╔══════════════════════════════════════════════════════╗"
-  echo "║                                                      ║"
-  echo "║ ⚠️  Achtung! Um das Game-Script korrekt zu nutzen:     ║"
-  echo "║                                                      ║"
-  echo "║  Du musst in deiner /etc/pacman.conf die Multilib    ║"
-  echo "║  Sektion **aktivieren** (auskommentieren):           ║"
-  echo "║                                                      ║"
-  echo "║    [multilib]                                        ║"
-  echo "║    Include = /etc/pacman.d/mirrorlist                ║"
-  echo "║                                                      ║"
-  echo "║    Danach einmal: sudo pacman -Syy                   ║"
-  echo "║    cd archlinux-hyprland-groundzero/                 ║"
-  echo "║    und ./install neuausführen im                     ║"
-  echo "╚══════════════════════════════════════════════════════╝"
+  echo "╔════════════════════════════════════════════════════╗"
+  echo "║                                                    ║"
+  echo "║ ⚠️  Achtung! Damit das Game-Script funktioniert:     ║"
+  echo "║                                                    ║"
+  echo "║  → Öffne /etc/pacman.conf und aktiviere Multilib:   ║"
+  echo "║                                                    ║"
+  echo "║     [multilib]                                     ║"
+  echo "║     Include = /etc/pacman.d/mirrorlist             ║"
+  echo "║                                                    ║"
+  echo "║  Danach ausführen:                                 ║"
+  echo "║     sudo pacman -Syy                               ║"
+  echo "║                                                    ║"
+  echo "║  Und dieses Script erneut starten:                 ║"
+  echo "║     ./install.sh                                   ║"
+  echo "║                                                    ║"
+  echo "╚════════════════════════════════════════════════════╝"
   echo -e "\e[0m"
-  continue_prompt "verstanden!"
+  continue_prompt
 }
 
 info "# 2. Gamescript"
