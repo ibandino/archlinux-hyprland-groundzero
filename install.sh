@@ -46,7 +46,6 @@ info "# 5. CleanUp Sektion"
 continue_prompt
 bash ./script/clean_groundzero.sh
 
-# 6. Starte Dotfile-Kopie
 info "# 6. Dotfiles kopieren"
 
 DOTDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main"
@@ -70,7 +69,7 @@ fi
 
 
 
-info "✅ Groundzero automatische Install Ohter Update Finish"
+info "✅ Groundzero automatiK Install Ohter Update Finish"
 
 
 # Leerzeilen
