@@ -1,11 +1,11 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+
 # A modified version of Rofi-Theme-Selector, concentrating only on ~/.local and also, applying only 10 @themes in ~/.config/rofi/config.rasi
 # as opposed to continous adding of //@theme
 
 # This code is released in public domain by Dave Davenport <qball@gmpclient.org>
 
-iDIR="$HOME/.config/swaync/images"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
 
 
 OS="linux"
