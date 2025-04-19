@@ -1,8 +1,7 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Playerctl
 
-music_icon="$HOME/.config/swaync/icons/music.png"
+music_icon="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/icons/music.png"
 
 # Play the next track
 play_next() {
