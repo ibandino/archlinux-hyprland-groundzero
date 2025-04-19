@@ -33,9 +33,9 @@ warn_pacman_conf() {
   echo -e "\e[1;33m"
   echo "╔════════════════════════════════════════════════════╗"
   echo "║                                                    ║"
-  echo "║ ⚠️  Achtung! Damit das Game-Script funktioniert:     ║"
+  echo "║ ⚠️  Achtung! Damit das Game-Script funktioniert:   ║"
   echo "║                                                    ║"
-  echo "║  → Öffne /etc/pacman.conf und aktiviere Multilib:   ║"
+  echo "║  → Öffne /etc/pacman.conf und aktiviere Multilib:  ║"
   echo "║                                                    ║"
   echo "║     [multilib]                                     ║"
   echo "║     Include = /etc/pacman.d/mirrorlist             ║"
@@ -68,4 +68,42 @@ bash ./script/clean_groundzero.sh
 
 # 7. Dotfiles kopieren
 info "# 6. Dotfiles kopieren"
-DOT
+DOTDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main"
+COPY_SCRIPT="$DOTDIR/copy.sh"
+
+if [[ -d "$DOTDIR" ]]; then
+  cd "$DOTDIR" || { echo -e "\e[1;31m[!] Konnte nicht in $DOTDIR wechseln!\e[0m"; exit 1; }
+  
+  if [[ -f "copy.sh" ]]; then
+    chmod +x copy.sh
+    bash copy.sh
+  else
+    echo -e "\e[1;31m[!] copy.sh nicht gefunden in $DOTDIR!\e[0m"
+    exit 1
+  fi
+else
+  echo -e "\e[1;31m[!] Verzeichnis $DOTDIR existiert nicht!\e[0m"
+  exit 1
+fi
+
+# Abschlussmeldung
+info "✅ Groundzero automatiK Install Other Update Finish"
+
+# Leerzeilen
+printf "\n%.0s" {1..2}
+
+# Arch-Logo in Lila
+echo -e "\e[35m"
+cat << "EOF"
+ ▗▄▖▗▄▄▖ ▗▄▄▗▖ ▗▗▖  ▗▄▄▄▗▖  ▗▗▖ ▗▗▖  ▗▖    ▗▄▄▄▄▗▄▄▄▗▖  ▗▖    
+▐▌ ▐▐▌ ▐▐▌  ▐▌ ▐▐▌    █ ▐▛▚▖▐▐▌ ▐▌▝▚▞▘        ▗▞▐▌  ▐▛▚▖▐▌    
+▐▛▀▜▐▛▀▚▐▌  ▐▛▀▜▐▌    █ ▐▌ ▝▜▐▌ ▐▌ ▐▌       ▗▞▘ ▐▛▀▀▐▌ ▝▜▌    
+▐▌ ▐▐▌ ▐▝▚▄▄▐▌ ▐▐▙▄▄▗▄█▄▐▌  ▐▝▚▄▞▗▞▘▝▚▖    ▐▙▄▄▄▐▙▄▄▐▌  ▐▌    
+            ▗▖ ▗▗▖  ▗▗▄▄▖▗▄▄▖▗▖   ▗▄▖▗▖  ▗▗▄▄▄                
+            ▐▌ ▐▌▝▚▞▘▐▌ ▐▐▌ ▐▐▌  ▐▌ ▐▐▛▚▖▐▐▌  █               
+            ▐▛▀▜▌ ▐▌ ▐▛▀▘▐▛▀▚▐▌  ▐▛▀▜▐▌ ▝▜▐▌  █               
+            ▐▌ ▐▌ ▐▌ ▐▌  ▐▌ ▐▐▙▄▄▐▌ ▐▐▌  ▐▐▙▄▄▀               
+         ▗▄▄▗▄▄▖ ▗▄▖▗▖ ▗▗▖  ▗▗▄▄▄▗▄▄▄▄▗▄▄▄▗▄▄▖ ▗▄▖            
+        ▐▌  ▐▌ ▐▐▌ ▐▐▌ ▐▐▌                                  
+EOF
+echo -e "${reset}"
