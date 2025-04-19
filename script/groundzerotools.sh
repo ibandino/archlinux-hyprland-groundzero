@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e  # Stoppe bei Fehlern
 
 echo "📦 System wird aktualisiert..."
 sudo pacman -Syu --noconfirm
