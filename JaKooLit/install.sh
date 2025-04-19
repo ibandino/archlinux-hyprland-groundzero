@@ -1,7 +1,5 @@
 #!/bin/bash
 
-clear
-
 # Set some colors for output messages
 OK="$(tput setaf 2)[OK]$(tput sgr0)"
 ERROR="$(tput setaf 1)[ERROR]$(tput sgr0)"
@@ -62,8 +60,6 @@ if ! command -v whiptail >/dev/null; then
     printf "\n%.0s" {1..1}
 fi
 
-clear
-
 # Leerzeilen
 printf "\n%.0s" {1..2}
 
@@ -105,6 +101,8 @@ ATTENTION: Run a full system update and Reboot first !!! (Highly Recommended)\n\
 NOTE: If you are installing on a VM, ensure to enable 3D acceleration else Hyprland may NOT start!" \
     15 80
 
+sleep 8
+
 # Ask if the user wants to proceed
 if ! whiptail --title "Proceed with Installation?" \
     --yesno "Would you like to proceed?" 7 50; then
@@ -114,9 +112,9 @@ if ! whiptail --title "Proceed with Installation?" \
     exit 1
 fi
 
-echo "👌 ${OK} 🇵🇭 ${MAGENTA}KooL..${RESET} ${SKY_BLUE}lets continue with the installation...${RESET}" | tee -a "$LOG"
+echo "👌 ${OK}🇩🇪 ${MAGENTA}KooL..${RESET} ${SKY_BLUE}lets continue with the installation...${RESET}" | tee -a "$LOG"
 
-sleep 1
+sleep 2
 printf "\n%.0s" {1..1}
 
 # install pciutils if detected not installed. Necessary for detecting GPU
@@ -330,7 +328,7 @@ while true; do
     # If "dots" is not selected, show a note and ask the user to proceed or return to choices
     if [[ "$dots_selected" == "OFF" ]]; then
         # Show a note about not selecting the "dots" option
-        if ! whiptail --title "KooL Hyprland Dot Files" --yesno \
+        if ! whiptail --title " GroundZero Hyprland Dot Files" --yesno \
         "You have not selected to install the pre-configured KooL Hyprland dotfiles.\n\nKindly NOTE that if you proceed without Dots, Hyprland will start with default vanilla Hyprland configuration and I won't be able to give you support.\n\nWould you like to continue install without KooL Hyprland Dots or return to choices/options?" \
         --yes-button "Continue" --no-button "Return" 15 90; then
             echo "🔙 Returning to options..." | tee -a "$LOG"
@@ -356,7 +354,7 @@ while true; do
         continue 
     fi
 
-    echo "👌 ${OK} You confirmed your choices. Proceeding with ${SKY_BLUE}KooL 🇵🇭 Hyprland Installation...${RESET}" | tee -a "$LOG"
+    echo "👌 ${OK} You confirmed your choices. Proceeding with ${SKY_BLUE}Hyprland Installation...${RESET}" | tee -a "$LOG"
     break  
 done
 
@@ -378,7 +376,7 @@ fi
 sleep 1
 
 # Run the Hyprland related scripts
-echo "${INFO} Installing ${SKY_BLUE}KooL Hyprland additional packages...${RESET}" | tee -a "$LOG"
+echo "${INFO} Installing ${SKY_BLUE}GroundZero Hyprland Dot Files additional packages...${RESET}" | tee -a "$LOG"
 sleep 1
 execute_script "01-hypr-pkgs.sh"
 
@@ -472,7 +470,7 @@ for option in "${options[@]}"; do
     esac
 done
 
-sleep 1
+sleep 2
 # copy fastfetch config if arch.png is not present
 if [ ! -f "$HOME/.config/fastfetch/arch.png" ]; then
     cp -r assets/fastfetch "$HOME/.config/"
@@ -492,7 +490,7 @@ if pacman -Q hyprland &> /dev/null || pacman -Q hyprland-git &> /dev/null; then
     sleep 2
     printf "\n%.0s" {1..2}
 
-    printf "${SKY_BLUE}Thank you${RESET} 🫰 for using 🇵🇭 ${MAGENTA}KooL's Hyprland Dots${RESET}. ${YELLOW}Enjoy and Have a good day!${RESET}"
+    printf "${SKY_BLUE}Thank you${RESET} for ${MAGENTA}GroundZero Hyprland Dot Files${RESET}. ${YELLOW}Enjoy and Have a good day!${RESET}"
     printf "\n%.0s" {1..2}
 
     printf "\n${NOTE} You can start Hyprland by typing ${SKY_BLUE}Hyprland${RESET} (IF SDDM is not installed) (note the capital H!).\n"
