@@ -7,6 +7,9 @@ continue_prompt() {
   echo ""
 }
 
+info 🧬 "Arch ist Hyprland, Hyprland ist Arch – alles andere ist Legacy."
+continue_prompt
+
 info "Starte Groundzero Setup..."
 continue_prompt
 
