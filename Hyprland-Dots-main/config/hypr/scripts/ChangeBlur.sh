@@ -1,8 +1,7 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Script for changing blurs on the fly
 
-notif="$HOME/.config/swaync/images"
+notif="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
 
 STATE=$(hyprctl -j getoption decoration:blur:passes | jq ".int")
 
