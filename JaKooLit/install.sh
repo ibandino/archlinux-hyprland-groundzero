@@ -64,32 +64,40 @@ fi
 
 clear
 
+# Leerzeilen
 printf "\n%.0s" {1..2}
-echo -e "\e[35m" # Lila Farbe
-echo " _______ _______ _______         _       ______  _______ _______ _______ _______ "
-echo "(  ____ (  ____ (  ___  |\     /( (    /(  __  \/ ___   (  ____ (  ____ (  ___  )"
-echo "| (    \| (    )| (   ) | )   ( |  \  ( | (  \  \/   )  | (    \| (    )| (   ) |"
-echo "| |     | (____)| |   | | |   | |   \ | | |   ) |   /   | (__   | (____)| |   | |"
-echo "| | ____|     __| |   | | |   | | (\ \) | |   | |  /   /|  __)  |     __| |   | |"
-echo "| | \_  | (\ (  | |   | | |   | | | \   | |   ) | /   / | (     | (\ (  | |   ) |"
-echo "| (___) | ) \ \_| (___) | (___) | )  \  | (__/  )/   (_/| (____/| ) \ \_| (___) |"
-echo "(_______|/   \__(_____________________)_(_______________(____________\__(_______)"
-echo "      |\     /|\     /(  ____ (  ____ ( \     (  ___  ( (    /(  __  \          "
-echo "      | )   ( ( \   / | (    )| (    )| (     | (   ) |  \  ( | (  \  )         "
-echo " _____| (___) |\ (_) /| (____)| (____)| |     | (___) |   \ | | |   ) |_____    "
-echo "(_____|  ___  | \   / |  _____|     __| |     |  ___  | (\ \) | |   | (_____)   "
-echo "      | (   ) |  ) (  | (     | (\ (  | |     | (   ) | | \   | |   ) |         "
-echo "      | )   ( |  | |  | )     | ) \ \_| (____/| )   ( | )  \  | (__/  )     2025"
-echo "      |/     \|  \_/  |/      |/   \__(_______|/     \|/    )_(______/ ArchLinux"
-echo "  inspirit of JaKooLit - Best Desktop - lokalFork - Community Hyprland Hub      "
-echo "   GroundZero wird entwickelt und weitergeführt im Sinne der Philosophie :      "
-echo "  Nur MultiModulareSysteme mit Extrem Guter Feedback bindung zum MitNutzer      "
-echo "      kann opensource zum industrie standart für Freie - Kernstarken -          "
-echo "    Betriebsysteme , mutieren lassen und zeigen was ein Ar(s)ch System          "
-echo "         wirklich zu bedeuten hat wenn es mit Hyprland Fährt   !                "   
-echo -e "\e[0m" # Farbe zurücksetzen
-printf "\n%.0s" {1..1}
 
+# Lila Farbe
+echo -e "\e[35m"
+
+# Regenbogen-Arch-ASCII-Logo in Lila (kannst später mit lolcat spielen)
+cat << "EOF"
+ _______ _______ _______         _       ______  _______ _______ _______ _______ 
+(  ____ (  ____ (  ___  |\     /( (    /(  __  \/ ___   (  ____ (  ____ (  ___  )
+| (    \| (    )| (   ) | )   ( |  \  ( | (  \  \/   )  | (    \| (    )| (   ) |
+| |     | (____)| |   | | |   | |   \ | | |   ) |   /   | (__   | (____)| |   | |
+| | ____|     __| |   | | |   | | (\ \) | |   | |  /   /|  __)  |     __| |   | |
+| | \_  | (\ (  | |   | | |   | | | \   | |   ) | /   / | (     | (\ (  | |   ) |
+| (___) | ) \ \_| (___) | (___) | )  \  | (__/  )/   (_/| (____/| ) \ \_| (___) |
+(_______|/   \__(_____________________)_(_______________(____________\__(_______)
+      |\     /|\     /(  ____ (  ____ ( \     (  ___  ( (    /(  __  \          
+      | )   ( ( \   / | (    )| (    )| (     | (   ) |  \  ( | (  \  )         
+ _____| (___) |\ (_) /| (____)| (____)| |     | (___) |   \ | | |   ) |_____    
+(_____|  ___  | \   / |  _____|     __| |     |  ___  | (\ \) | |   | (_____)   
+      | (   ) |  ) (  | (     | (\ (  | |     | (   ) | | \   | |   ) |         
+      | )   ( |  | |  | )     | ) \ \_| (____/| )   ( | )  \  | (__/  )     2025
+      |/     \|  \_/  |/      |/   \__(_______|/     \|/    )_(______/  ArchLinux
+  inspirit of JaKooLit - Best Desktop - lokalFork - Community Hyprland Hub     
+ GroundZero wird entwickelt und weitergeführt im Sinne der Philosophie :       
+Nur MultiModulareSysteme mit Extrem Guter Feedback bindung zum MitNutzer       
+    kann opensource zum industrie standart für Freie - Kernstarken -           
+  Betriebsysteme , mutieren lassen und zeigen was ein Ar(s)ch System           
+       wirklich zu bedeuten hat wenn es mit Hyprland Fährt   !
+EOF
+
+# Farbe zurücksetzen
+echo -e "\e[0m"
+printf "\n%.0s" {1..1}
 # Angepasste Willkommensnachricht mit deinem Projektnamen (Text)
 whiptail --title "GroundZero Hyprland (2025) Install Script" \
     --msgbox "Welcome to GroundZero Hyprland (2025) Install Script!!!\n\n\
