@@ -56,6 +56,7 @@ Ein öffentlicher Google-Drive-Ordner mit regelmäßig aktualisierten Snippets:
 ~/terminalhilfe/
 ```
 Darin findest du:
+
 ♨️ Bash-Befehle  
 ♨️ Download-Snippets  
 ♨️ Wine / Proton / Systemtweaks  
