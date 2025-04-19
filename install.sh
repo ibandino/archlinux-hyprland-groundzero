@@ -2,18 +2,6 @@
 set -euo pipefail
 trap 'echo -e "\n\e[1;31m[!] Fehler erkannt – Installation abgebrochen. Issue oder reinstall : ./Install.sh\e[0m"' ERR
 
-green="\e[1;32m"
-yellow="\e[1;33m"
-reset="\e[0m"
-
-info() {
-  echo -e "${green}[INFO]${reset} $1"
-}
-
-warn() {
-  echo -e "${yellow}[WARN]${reset} $1"
-}
-
 info "🧬 Arch ist Hyprland, Hyprland ist Arch – alles andere ist Legacy."
 info "Starte Groundzero Setup..."
 
