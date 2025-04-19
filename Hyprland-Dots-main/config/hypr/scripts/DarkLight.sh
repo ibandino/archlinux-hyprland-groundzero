@@ -1,5 +1,4 @@
 #!/bin/bash
-## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # For Dark and Light switching
 # Note: Scripts are looking for keywords Light or Dark except for wallpapers as the are in a separate directories
 
@@ -7,16 +6,16 @@
 wallpaper_base_path="$HOME/Pictures/wallpapers/Dynamic-Wallpapers"
 dark_wallpapers="$wallpaper_base_path/Dark"
 light_wallpapers="$wallpaper_base_path/Light"
-hypr_config_path="$HOME/.config/hypr"
-swaync_style="$HOME/.config/swaync/style.css"
-ags_style="$HOME/.config/ags/user/style.css"
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
-notif="$HOME/.config/swaync/images/bell.png"
-wallust_rofi="$HOME/.config/wallust/templates/colors-rofi.rasi"
+hypr_config_path="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr"
+swaync_style="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/style.css"
+ags_style="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/ags/user/style.css"
+SCRIPTSDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts"
+notif="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images/bell.png"
+wallust_rofi="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/wallust/templates/colors-rofi.rasi"
 
-kitty_conf="$HOME/.config/kitty/kitty.conf"
+kitty_conf="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/kitty/kitty.conf"
 
-wallust_config="$HOME/.config/wallust/wallust.toml"
+wallust_config="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/wallust/wallust.toml"
 pallete_dark="dark16"
 pallete_light="light16"
 
