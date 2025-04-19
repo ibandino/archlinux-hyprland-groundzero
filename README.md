@@ -78,6 +78,7 @@ Wird **bei jedem Groundzero-Update automatisch aktualisierbar**.
 │   ├── groundzero.sh
 │   ├── rammanager.sh
 │   ├── clean_groundzero.sh
+|   (in arbeit)
 │   ├── systemd/
 │   │   ├── groundzero-update.service
 │   │   └── groundzero-update.timer
@@ -89,6 +90,7 @@ Wird **bei jedem Groundzero-Update automatisch aktualisierbar**.
 │   ├── waybar/
 │   ├── kitty/
 │   └── zsh/
+(in arbeit)
 └── terminalhilfe/
     └── [Cloud-synchronisierte Terminal-Snippets]
 
