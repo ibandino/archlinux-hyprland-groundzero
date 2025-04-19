@@ -1,5 +1,7 @@
 #!/bin/bash
 set -euo pipefail
+set -x  # 👈 zeigt alle ausgeführten Befehle im Terminal an
+
 trap 'echo -e "\n\e[1;31m[!] Fehler erkannt – Installation abgebrochen. Issue oder reinstall : ./Install.sh\e[0m"' ERR
 
 info "🧬 Arch ist Hyprland, Hyprland ist Arch – alles andere ist Legacy."
