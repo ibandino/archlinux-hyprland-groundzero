@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+trap 'echo -e "\n\e[1;31m[!] Fehler erkannt – Installation abgebrochen.\e[0m"' ERR
 
 green="\e[1;32m"
 yellow="\e[1;33m"
