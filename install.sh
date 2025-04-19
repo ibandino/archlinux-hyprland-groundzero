@@ -6,29 +6,16 @@ green="\e[1;32m"
 yellow="\e[1;33m"
 reset="\e[0m"
 
-info() { echo -e "\e[1;32m[+] $1 \e[0m"; }
-continue_prompt() {
-  echo -ne "\e[1;33m→ Drücke [ENTER] zum Fortfahren (oder warte 3 Sekunden) \e[0m"
-  read -t 3 -n 1 input
-  echo ""
-}
-
 info 🧬 "Arch ist Hyprland, Hyprland ist Arch – alles andere ist Legacy."
-continue_prompt
-
-info "Starte Groundzero Setup..."
-continue_prompt
+info    "Starte Groundzero Setup..."
 
 #Humorscript
 bash ./script/happy.sh
 
-
 info "# 0.GroundZero - Gemeinsame folge packete"
-continue_prompt
 bash ./script/corepackages.sh
 
 info "# 1. Tools - Grundaustattung"
-continue_prompt
 bash ./script/groundzerotools.sh
 
 warn_pacman_conf() {
@@ -55,23 +42,18 @@ warn_pacman_conf() {
 
 info "# 2. Gamescript"
 warn_pacman_conf
-continue_prompt
 bash ./script/gamescript.sh
 
 info "# 3. Hyprland JaKooLit Style + Updates + FullConfigs"
-continue_prompt
 bash ./script/hyprland.sh
 
 info "# 4. Labfactory Sektion"
-continue_prompt
 bash ./script/labfactory.sh
 
 info "# 5. CleanUp Sektion"
-continue_prompt
 bash ./script/clean_groundzero.sh
 
 info "# 6. Dotfiles kopieren"
-
 DOTDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main"
 COPY_SCRIPT="$DOTDIR/copy.sh"
 
@@ -92,9 +74,7 @@ else
 fi
 
 
-
 info "✅ Groundzero automatiK Install Ohter Update Finish"
-
 
 # Leerzeilen
 printf "\n%.0s" {1..2}
