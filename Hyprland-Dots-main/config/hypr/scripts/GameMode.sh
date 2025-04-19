@@ -2,8 +2,8 @@
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Game Mode. Turning off all animations
 
-notif="$HOME/.config/swaync/images/ja.png"
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
+notif="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images/ja.png"
+SCRIPTSDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts"
 
 
 HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
