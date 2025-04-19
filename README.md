@@ -26,7 +26,7 @@ GroundZero ist deine Clean-Install-Anlaufstelle – genau dafür wurde es entwic
 https://archlinux.org/download/
 ```
 Tipp : Bei dem Kernel auswahl kannst du den standart linux Kernel
-der angekreutzt ist mit ctr + c (oder x) reseten , wähle danach den Linux-Zen aus um keine zwei kernel zu installieren(optional)
+der angekreutzt ist mit ctr + c (sehbar am x) reseten , wähle danach den Linux-Zen aus um keine zwei kernel zu installieren(optional)
 
 
 ## ⚡ Schnellstart 
