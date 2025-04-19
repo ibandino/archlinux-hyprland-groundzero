@@ -1,9 +1,10 @@
-# 🧱 ArchLinux Hyprland GroundZerO
+# 🧱 ArchLinux + Hyprland = GroundZerO 🌀  
+Minimal. Modular. Maximale Kontrolle.
+> **GroundZerO** ist ein ultraschlankes Hyprland-Setup direkt auf ArchLinux – für Performance-Fans, Tiling-Enthusiasten & Gaming-Freaks.
 
 [![Demo-Video ansehen](https://img.youtube.com/vi/nBtTQXCSSMw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nBtTQXCSSMw)
 
 Ziel:
-
 Ein purer, unverbastelter Arch-Kern,
 kombiniert mit einer präzise geschliffenen Hyprland-Umgebung,
 kein Remix, kein Fork, sondern
@@ -13,12 +14,10 @@ Ein ultraleichtes und modulares Hyprland-Setup für Arch Linux.
 Performance steht an erster Stelle – ideal für Gamer, Power-User und Terminalfreunde.
 Automatisch aktualisierbar, mit Gaming-Optimierungen, integrierter Terminalhilfe und Android-Spiegelung.
 
-Die Grundinstallation kann über den Schnellstart jederzeit wiederholt werden – bei Spiegelserver-Problemen oder Installationsfehlern werden bereits installierte Pakete dabei automatisch übersprungen.
-
-Beim JaKooLit-Hyprland kann es durch Walus zu einem Ladebalken-Bug kommen, bei dem man sein Passwort "gefühlt blind" eingeben muss. Für diesen Bug bin ich nicht verantwortlich – er wird aber aber gefixed den das JaKooLit setup wird fester bestandteil im repo also Eigenständig.
-
-Das GroundZero-Setup ist ein vollwertiges Starter-Kit und bringt alles mit, was ein Gamer oder Workaround-Nutzer braucht.
-Alle Pakete werden grundsätzlich über die Arch-Repos oder mit yay aktuell gehalten.
+❗ Hinweis: Das Setup verwendet im Kern das JaKooLit-Hyprland-Design.  
+Aktuell kann es dabei (je nach Grafikchip) zu einem Ladebalken-Bug bei der Passworteingabe kommen.  
+Dieser Bug liegt am Original-Walus-Installer und wird mit einem eigenen Patch gelöst.
+Der Walus install wirkt momentan etwas schwerfällig , wird noch behoben.....
 
 Der Fokus liegt klar auf der Art, wie man seinen Desktop steuert:
 Mit Super + H wird erklärt, was „Keyboard First“ bedeutet – und wie du volle Kontrolle bekommst.
@@ -36,7 +35,6 @@ Tipp : Bei dem Kernel auswahl kannst du den standart linux Kernel
 der angekreutzt ist mit ctr + c (sehbar am x) reseten , wähle danach den Linux-Zen aus um keine zwei kernel zu installieren(optional).
 Dieser Vorschritt wird später unötig da es eine eigene ArchLinux-GroundZero.iso geben wird ..... (in Arbeit)
 
-
 ## ⚡ Schnellstart 
 ### 💻 Via `git clone` :
 ```bash
@@ -48,29 +46,15 @@ chmod +x install.sh
 Tipp: Installier nach dem archinstall im tty login danach erst - sudo pacman -S git - und dann geh den github weg ,
 das script ist modular aufgebaut und arbeitet sich bis zum hyrpland desktop punktuell durch ...
 Die wlan broadcam treiber sind nicht enthalten , da es zuviele verschiedene modelle gibt (dies manual selbst installieren),
-lan kabel geht aber immer .
+lan kabel geht aber immer oder USB Weiterleitung über USB A oder UBS C über HandyHotspot etc .
+Dieser aspekt wird noch Aufgebaut in sache wlan treiber finden und in kommenden updates Integriert ....
+Hierbei handelt es sich lediglich um den wlan empfang , nicht um den lan anschluss selbst ....
 
-## 🔧 Komponenten
-Die `install.sh` führt folgende Schritte aus:
-```bash
-# 1. Tools und Basics
-./script/groundzerotools.sh
-
-# 2.Original Hyprland JaKooLit Setup (Wayland, EWW, Themes etc.)
-./script/hyprland.sh
-
-# 3. Gaming Tuning + Extras
-./script/gamescript.sh
-
-# 4. Labfactory (Platzhalter)
-./script/labfactory.sh
-
-```
-## 📁 Terminalhilfe aus Google Drive
-Ein öffentlicher Google Drive Ordner wird regelmäßig synchronisiert:
+## 🧠 Terminalhilfe aus der Cloud (in Arbeit)
+Ein öffentlicher Google-Drive-Ordner mit regelmäßig aktualisierten Snippets:  
 ```bash
 ~/terminalhilfe/
-```
+
 
 Darin findest du:
 ♨️ Bash-Befehle  
