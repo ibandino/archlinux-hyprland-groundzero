@@ -42,13 +42,39 @@ bash ./script/clean_groundzero.sh
 
 info "✅ Groundzero automatische Install Ohter Update Finish"
 
-# ARCH-LOGO in Regenbogenfarben anzeigen (mit lolcat)
-if command -v lolcat &> /dev/null; then
-  echo -e "\n" && cat ./art/archlogo.txt | lolcat
-else
-  echo -e "\n[+] Hinweis: 'lolcat' nicht installiert – ASCII-Logo ohne Farbe:\n"
-  cat ./art/archlogo.txt
-fi
+
+# Leerzeilen
+printf "\n%.0s" {1..2}
+
+# Lila Farbe
+echo -e "\e[35m"
+
+# Regenbogen-Arch-ASCII-Logo in Lila (kannst später mit lolcat spielen)
+cat << "EOF"
+ ▗▄▖▗▄▄▖ ▗▄▄▗▖ ▗▗▖  ▗▄▄▄▗▖  ▗▗▖ ▗▗▖  ▗▖    ▗▄▄▄▄▗▄▄▄▗▖  ▗▖    
+▐▌ ▐▐▌ ▐▐▌  ▐▌ ▐▐▌    █ ▐▛▚▖▐▐▌ ▐▌▝▚▞▘        ▗▞▐▌  ▐▛▚▖▐▌    
+▐▛▀▜▐▛▀▚▐▌  ▐▛▀▜▐▌    █ ▐▌ ▝▜▐▌ ▐▌ ▐▌       ▗▞▘ ▐▛▀▀▐▌ ▝▜▌    
+▐▌ ▐▐▌ ▐▝▚▄▄▐▌ ▐▐▙▄▄▗▄█▄▐▌  ▐▝▚▄▞▗▞▘▝▚▖    ▐▙▄▄▄▐▙▄▄▐▌  ▐▌    
+            ▗▖ ▗▗▖  ▗▗▄▄▖▗▄▄▖▗▖   ▗▄▖▗▖  ▗▗▄▄▄                
+            ▐▌ ▐▌▝▚▞▘▐▌ ▐▐▌ ▐▐▌  ▐▌ ▐▐▛▚▖▐▐▌  █               
+            ▐▛▀▜▌ ▐▌ ▐▛▀▘▐▛▀▚▐▌  ▐▛▀▜▐▌ ▝▜▐▌  █               
+            ▐▌ ▐▌ ▐▌ ▐▌  ▐▌ ▐▐▙▄▄▐▌ ▐▐▌  ▐▐▙▄▄▀               
+         ▗▄▄▗▄▄▖ ▗▄▖▗▖ ▗▗▖  ▗▗▄▄▄▗▄▄▄▄▗▄▄▄▗▄▄▖ ▗▄▖            
+        ▐▌  ▐▌ ▐▐▌ ▐▐▌ ▐▐▛▚▖▐▐▌  █  ▗▞▐▌  ▐▌ ▐▐▌ ▐▌           
+        ▐▌▝▜▐▛▀▚▐▌ ▐▐▌ ▐▐▌ ▝▜▐▌  █▗▞▘ ▐▛▀▀▐▛▀▚▐▌ ▐▌           
+        ▝▚▄▞▐▌ ▐▝▚▄▞▝▚▄▞▐▌  ▐▐▙▄▄▐▙▄▄▄▐▙▄▄▐▌ ▐▝▚▄▞▘           
+▗▄▄▄▗▄▄▄▗▖  ▗▗▄▄▄▖▗▄▄▖▗▄▄▗▖ ▗▖    ▗▄▄▖▗▄▄▄▗▄▄▖ ▗▄▖ ▗▄▗▄▄▄▖    
+▐▌    █ ▐▛▚▖▐▌ █ ▐▌  ▐▌  ▐▌ ▐▌    ▐▌ ▐▐▌  ▐▌ ▐▐▌ ▐▐▌ ▐▌█      
+▐▛▀▀▘ █ ▐▌ ▝▜▌ █  ▝▀▚▐▌  ▐▛▀▜▌    ▐▛▀▚▐▛▀▀▐▛▀▚▐▌ ▐▐▌ ▐▌█      
+▐▌  ▗▄█▄▐▌  ▐▗▄█▄▗▄▄▞▝▚▄▄▐▌ ▐▌    ▐▌ ▐▐▙▄▄▐▙▄▞▝▚▄▞▝▚▄▞▘█      
+EOF
+
+# Farbe zurücksetzen
+echo -e "\e[0m"
+printf "\n%.0s" {1..1}
 
 echo -e "\n\e[1;32m[✓] Setup abgeschlossen. Du kannst jetzt manuell rebooten oder direkt Hyprland starten!\e[0m"
 
+# Warte auf ENTER oder automatisch weiter nach 5 Sekunden
+echo -e "\e[33m[INFO]\e[0m Drücke ENTER zum Fortfahren... (automatischer Start in 5 Sekunden)"
+read -t 5 -p ""  # wartet auf Enter für 5 Sekunden, dann automatisch weiter
