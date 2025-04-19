@@ -1,4 +1,9 @@
 #!/bin/bash
+set -euo pipefail
+
+green="\e[1;32m"
+yellow="\e[1;33m"
+reset="\e[0m"
 
 info() { echo -e "\e[1;32m[+] $1 \e[0m"; }
 continue_prompt() {
@@ -39,6 +44,30 @@ bash ./script/labfactory.sh
 info "# 5. CleanUp Sektion"
 continue_prompt
 bash ./script/clean_groundzero.sh
+
+# 6. Starte Dotfile-Kopie
+info "# 6. Dotfiles kopieren"
+
+DOTDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main"
+COPY_SCRIPT="$DOTDIR/copy.sh"
+
+if [[ -d "$DOTDIR" ]]; then
+  cd "$DOTDIR" || { echo -e "\e[1;31m[!] Konnte nicht in $DOTDIR wechseln!\e[0m"; exit 1; }
+  
+  if [[ -f "copy.sh" ]]; then
+    chmod +x copy.sh
+    bash copy.sh
+  else
+    echo -e "\e[1;31m[!] copy.sh nicht gefunden in $DOTDIR!\e[0m"
+    exit 1
+  fi
+
+else
+  echo -e "\e[1;31m[!] Verzeichnis $DOTDIR existiert nicht!\e[0m"
+  exit 1
+fi
+
+
 
 info "✅ Groundzero automatische Install Ohter Update Finish"
 
