@@ -1,8 +1,7 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Script for keyboard backlights (if supported) using brightnessctl
 
-iDIR="$HOME/.config/swaync/icons"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/icons"
 
 # Get keyboard brightness
 get_kbd_backlight() {
