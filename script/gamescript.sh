@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e  # Stoppt das Skript bei Fehlern
 
 # Multilib-Repository sicherstellen
 if ! pacman -Si lib32-mesa &>/dev/null; then
@@ -21,7 +20,6 @@ sudo pacman -S --noconfirm \
   mesa mesa-utils lib32-mesa \
   vulkan-icd-loader vulkan-tools lib32-vulkan-icd-loader \
   gamescope gamemode mangohud lib32-mangohud \
-  vkbasalt lib32-vkbasalt
 
 echo "⏳ Warte 3 Sekunden..."
 sleep 3
