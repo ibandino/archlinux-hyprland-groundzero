@@ -28,32 +28,6 @@ bash ./script/corepackages.sh
 info "# 1. Tools – Grundausstattung"
 bash ./script/groundzerotools.sh
 
-# 3. Hinweis zu pacman.conf
-warn_pacman_conf() {
-  echo -e "\e[1;33m"
-  echo "╔════════════════════════════════════════════════════╗"
-  echo "║                                                    ║"
-  echo "║ ⚠️  Achtung! Damit das Game-Script funktioniert:   ║"
-  echo "║                                                    ║"
-  echo "║  → Öffne /etc/pacman.conf und aktiviere Multilib:  ║"
-  echo "║                                                    ║"
-  echo "║     [multilib]                                     ║"
-  echo "║     Include = /etc/pacman.d/mirrorlist             ║"
-  echo "║                                                    ║"
-  echo "║  Danach ausführen:                                 ║"
-  echo "║     sudo pacman -Syy                               ║"
-  echo "║                                                    ║"
-  echo "║  Und dieses Script erneut starten:                 ║"
-  echo "║     ./install.sh                                   ║"
-  echo "║                                                    ║"
-  echo "╚════════════════════════════════════════════════════╝"
-  echo -e "\e[0m"
-}
-
-info "# 2. GameScript"
-warn_pacman_conf
-bash ./script/gamescript.sh
-
 # 4. Hyprland Full-Setup
 info "# 3. Hyprland JaKooLit Style + Updates + FullConfigs"
 bash ./script/hyprland.sh
