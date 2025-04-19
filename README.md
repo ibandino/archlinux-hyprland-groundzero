@@ -54,15 +54,14 @@ Hierbei handelt es sich lediglich um den wlan empfang , nicht um den lan anschlu
 Ein öffentlicher Google-Drive-Ordner mit regelmäßig aktualisierten Snippets:  
 ```bash
 ~/terminalhilfe/
-
-
+```
 Darin findest du:
 ♨️ Bash-Befehle  
 ♨️ Download-Snippets  
 ♨️ Wine / Proton / Systemtweaks  
 ♨️ Textdateien mit Terminalhilfen
 
-Wird **bei jedem Groundzero-Update automatisch aktualisiert**.
+Wird **bei jedem Groundzero-Update automatisch aktualisierbar**.
 
 ## 📂 Repo-Struktur
 ```bash
