@@ -1,12 +1,11 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # For Rofi Beats to play online Music or Locally saved media files
 
 # Variables
 mDIR="$HOME/Music/"
-iDIR="$HOME/.config/swaync/icons"
-rofi_theme="$HOME/.config/rofi/config-rofi-Beats.rasi"
-rofi_theme_1="$HOME/.config/rofi/config-rofi-Beats-menu.rasi"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/icons"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-rofi-Beats.rasi"
+rofi_theme_1="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-rofi-Beats-menu.rasi"
 
 # Online Stations. Edit as required
 declare -A online_music=(
