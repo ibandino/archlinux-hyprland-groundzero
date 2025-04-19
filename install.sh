@@ -19,8 +19,9 @@ continue_prompt
 info "Starte Groundzero Setup..."
 continue_prompt
 
-info "initialisiere"
-continue_prompt
+#Humorscript
+bash ./script/happy.sh
+
 
 info "# 0.GroundZero - Gemeinsame folge packete"
 continue_prompt
