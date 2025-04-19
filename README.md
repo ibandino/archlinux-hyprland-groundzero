@@ -67,16 +67,31 @@ Wird **bei jedem Groundzero-Update automatisch aktualisierbar**.
 ```bash
 .
 ├── install.sh
-└── script/
-    ├── groundzerotools.sh
-    ├── hyprland.sh <-- beim walus install hat jakoolit ein grafik bug , ein install balken verdeckt das sudo passwort, es ist ersichtlich wenn walus 20 minuten nicht weiter updaten wo die eingabe ist(JaKooLit Mini bugg) - immer noch vom hersteller abhängig den bug zu debuggen
-    ├── gamescript.sh
-    ├── labfactory.sh
-    ├── groundzero.sh
-(betaphase)
-    └── systemd/
-        ├── groundzero-update.service
-        └── groundzero-update.timer
+├── README.md
+├── LICENSE
+├── script/
+│   ├── corepackages.sh
+│   ├── groundzerotools.sh
+│   ├── hyprland.sh
+│   ├── gamescript.sh
+│   ├── labfactory.sh
+│   ├── groundzero.sh
+│   ├── rammanager.sh
+│   ├── clean_groundzero.sh
+│   ├── systemd/
+│   │   ├── groundzero-update.service
+│   │   └── groundzero-update.timer
+│   └── assets/
+│       └── ascii/
+│           └── archlogo.txt
+├── config/
+│   ├── hypr/
+│   ├── waybar/
+│   ├── kitty/
+│   └── zsh/
+└── terminalhilfe/
+    └── [Cloud-synchronisierte Terminal-Snippets]
+
 ```
 
 ## 🧩 Modular und erweiterbar
