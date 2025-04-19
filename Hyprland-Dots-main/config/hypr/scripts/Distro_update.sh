@@ -1,9 +1,8 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Simple bash script to check and will try to update your system
 
 # Local Paths
-iDIR="$HOME/.config/swaync/images"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
 
 # Check for required tools (kitty)
 if ! command -v kitty &> /dev/null; then
