@@ -1,13 +1,12 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
 # Kitty Themes Source https://github.com/dexpota/kitty-themes #
 
 # Define directories and variables
-kitty_themes_DiR="$HOME/.config/kitty/kitty-themes" # Kitty Themes Directory
+kitty_themes_DiR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/kitty/kitty-themes" # Kitty Themes Directory
 theme_path="$kitty_themes_DiR/$theme.conf"
-kitty_config="$HOME/.config/kitty/kitty.conf"
-iDIR="$HOME/.config/swaync/images"
-rofi_theme="$HOME/.config/rofi/config-kitty-theme.rasi"
+kitty_config="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/kitty/kitty.conf"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-kitty-theme.rasi"
 
 # Check if the Kitty Themes directory exists
 if [ ! -d "$kitty_themes_DiR" ]; then
