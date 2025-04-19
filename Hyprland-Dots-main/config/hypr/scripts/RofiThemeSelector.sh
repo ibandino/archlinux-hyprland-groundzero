@@ -1,15 +1,15 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+
 # Script for adding a selected theme to the Rofi config
 
 IFS=$'\n\t'
 
 # Define directories and variables
-rofi_theme_dir="$HOME/.config/rofi/themes"
-rofi_config_file="$HOME/.config/rofi/config.rasi"
+rofi_theme_dir="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/themes"
+rofi_config_file="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config.rasi"
 SED=$(which sed)
-iDIR="$HOME/.config/swaync/images"
-rofi_theme="$HOME/.config/rofi/config-rofi-theme.rasi"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-rofi-theme.rasi"
 
 # Function to display menu options
 menu() {
