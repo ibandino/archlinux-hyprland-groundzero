@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cd "$(dirname "$0")"
+
 info() { echo -e "\e[1;32m[+] $1 \e[0m"; }
 continue_prompt() {
   echo -ne "\e[1;33m→ $1 (enter) \e[0m"
