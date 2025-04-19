@@ -1,9 +1,8 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Rofi menu for KooL Hyprland Quick Settings (SUPER SHIFT E)
 
 # Modify this config file for default terminal and EDITOR
-config_file="$HOME/.config/hypr/UserConfigs/01-UserDefaults.conf"
+config_file="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/UserConfigs/01-UserDefaults.conf"
 
 tmp_config_file=$(mktemp)
 sed 's/^\$//g; s/ = /=/g' "$config_file" > "$tmp_config_file"
@@ -11,13 +10,13 @@ source "$tmp_config_file"
 # ##################################### #
 
 # variables
-configs="$HOME/.config/hypr/configs"
-UserConfigs="$HOME/.config/hypr/UserConfigs"
-rofi_theme="$HOME/.config/rofi/config-edit.rasi"
+configs="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/configs"
+UserConfigs="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/UserConfigs"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-edit.rasi"
 msg=' ⁉️ Choose what to do ⁉️'
 iDIR="$HOME/.config/swaync/images"
-scriptsDir="$HOME/.config/hypr/scripts"
-UserScripts="$HOME/.config/hypr/UserScripts"
+scriptsDir="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts"
+UserScripts="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/UserScripts"
 
 # Function to display the menu options without numbers
 menu() {
