@@ -1,21 +1,20 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
 # Wallpaper Effects using ImageMagick (SUPER SHIFT W)
 
 # Variables
 terminal=kitty
-wallpaper_current="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
-wallpaper_output="$HOME/.config/hypr/wallpaper_effects/.wallpaper_modified"
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
+wallpaper_current="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/wallpaper_effects/.wallpaper_current"
+wallpaper_output="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/wallpaper_effects/.wallpaper_modified"
+SCRIPTSDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts"
 focused_monitor=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name')
-rofi_theme="$HOME/.config/rofi/config-wallpaper-effect.rasi"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-wallpaper-effect.rasi"
 
 # Directory for swaync
-iDIR="$HOME/.config/swaync/images"
-iDIRi="$HOME/.config/swaync/icons"
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main.config/swaync/images"
+iDIRi="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main.config/swaync/icons"
 
 # swww transition config
-FPS=60
+FPS=76
 TYPE="wipe"
 DURATION=2
 BEZIER=".43,1.19,1,.4"
