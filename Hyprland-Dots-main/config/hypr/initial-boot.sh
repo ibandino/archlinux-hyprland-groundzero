@@ -8,9 +8,9 @@
 # However, I do highly suggest not to touch it since again, as long as the marker exist, script wont run
 
 # Variables
-scriptsDir=$HOME/.config/hypr/scripts
-wallpaper=$HOME/.config/hypr/wallpaper_effects/.wallpaper_current
-waybar_style="$HOME/.config/waybar/style/[Extra] Modern-Combined - Transparent.css"
+scriptsDir=$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts
+wallpaper=$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/wallpaper_effects/.wallpaper_current
+waybar_style="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/waybar/style/[Extra] Modern-Combined - Transparent.css"
 kvantum_theme="catppuccin-mocha-blue"
 color_scheme="prefer-dark"
 gtk_theme="Flat-Remix-GTK-Blue-Dark"
@@ -21,7 +21,7 @@ swww="swww img"
 effect="--transition-bezier .43,1.19,1,.4 --transition-fps 30 --transition-type grow --transition-pos 0.925,0.977 --transition-duration 2"
 
 # Check if a marker file exists.
-if [ ! -f "$HOME/.config/hypr/.initial_startup_done" ]; then
+if [ ! -f "$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/.initial_startup_done" ]; then
     sleep 1
     # Initialize wallust and wallpaper
 	if [ -f "$wallpaper" ]; then
@@ -53,14 +53,14 @@ if [ ! -f "$HOME/.config/hypr/.initial_startup_done" ]; then
     "$scriptsDir/SwitchKeyboardLayout.sh" > /dev/null 2>&1 &
 
 	# waybar style
-	#if [ -L "$HOME/.config/waybar/config" ]; then
-    ##    	ln -sf "$waybar_style" "$HOME/.config/waybar/style.css"
+	#if [ -L "$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/waybar/config" ]; then
+    ##    	ln -sf "$waybar_style" "$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/waybar/style.css"
     #   	"$scriptsDir/Refresh.sh" > /dev/null 2>&1 & 
 	#fi
 
 
     # Create a marker file to indicate that the script has been executed.
-    touch "$HOME/.config/hypr/.initial_startup_done"
+    touch "$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/.initial_startup_done"
 
     exit
 fi
