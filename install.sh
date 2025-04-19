@@ -4,6 +4,10 @@ set -x  # 👈 zeigt alle ausgeführten Befehle im Terminal an
 
 trap 'echo -e "\n\e[1;31m[!] Fehler erkannt – Installation abgebrochen. Issue oder reinstall : ./Install.sh\e[0m"' ERR
 
+info() {
+  echo -e "\e[1;34m[INFO]\e[0m $1"
+}
+
 info "🧬 Arch ist Hyprland, Hyprland ist Arch – alles andere ist Legacy."
 info "Starte Groundzero Setup..."
 
@@ -17,6 +21,10 @@ bash ./script/corepackages.sh
 # 2. Tools-Grundausstattung
 info "# 1. Tools – Grundausstattung"
 bash ./script/groundzerotools.sh
+
+# 3. Tools-Grundausstattung
+info "# 1. Tools – Grundausstattung"
+bash ./script/gamescript.sh
 
 # 4. Hyprland Full-Setup
 info "# 3. Hyprland JaKooLit Style + Updates + FullConfigs"
