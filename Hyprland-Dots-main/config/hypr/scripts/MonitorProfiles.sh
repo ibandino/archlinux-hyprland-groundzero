@@ -1,19 +1,19 @@
 #!/bin/bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# For applying Pre-configured Monitor Profiles
 
+# For applying Pre-configured Monitor Profiles
 # Check if rofi is already running
+
 if pidof rofi > /dev/null; then
   pkill rofi
 fi
 
 # Variables
-iDIR="$HOME/.config/swaync/images"
-SCRIPTSDIR="$HOME/.config/hypr/scripts"
-monitor_dir="$HOME/.config/hypr/Monitor_Profiles"
-target="$HOME/.config/hypr/monitors.conf"
-rofi_theme="$HOME/.config/rofi/config-Monitors.rasi"
-msg='❗NOTE:❗ This will overwrite $HOME/.config/hypr/monitors.conf'
+iDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/swaync/images"
+SCRIPTSDIR="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/scripts"
+monitor_dir="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/Monitor_Profiles"
+target="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/monitors.conf"
+rofi_theme="$HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/rofi/config-Monitors.rasi"
+msg='❗NOTE:❗ This will overwrite $HOME/archlinux-hyprland-groundzero/Hyprland-Dots-main/.config/hypr/monitors.conf'
 
 # Define the list of files to ignore
 ignore_files=(
